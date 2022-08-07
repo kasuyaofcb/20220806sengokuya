@@ -1,0 +1,79 @@
+//common.scss
+@use "../global/import" as f;
+
+body {
+	font-family: f.$basic;
+	color: f.$txt-color;
+	font-feature-settings: "palt";
+	background-color: f.$white-color;
+	letter-spacing: 0.05em;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ここから共通部分============================== */
+
+/* h1タイトル部分 */
+
+h1 {
+	font-size: 12.6rem;
+	color: f.$white_color;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+}
+
+/* h2タイトル部分 */
+
+h2 {
+	font-size: clamp(2.6rem, 1.6rem + 5vw, 3.5rem);
+	font-weight: bold;
+	color: f.$txt-color;
+	letter-spacing: 0.1em;
+	@media (max-width: 600px) {
+		font-size: 2.6rem;
+	}
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: f.$txt-color;
+	letter-spacing: 0.1em;
+}
+
+p,
+button,
+a {
+	font-style: normal;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.innerWrapper {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.br__sp {
+	display: none;
+
+	@media screen and (max-width: 450px) {
+		display: block;
+	}
+}
+
+.br__pc {
+	@media screen and (max-width: 450px) {
+		display: none;
+	}
+}
+
+/* ここまで共通部分============================== */

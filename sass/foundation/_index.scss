@@ -1,0 +1,5 @@
+// //リセット用CSS
+@forward "reset"; // ここでリセットのCSS(SCSS)を呼び出す。
+
+// //全体用CSS
+@forward "common"; // ここで全体のCSS(SCSS)を呼び出す。

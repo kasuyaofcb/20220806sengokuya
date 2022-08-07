@@ -1,0 +1,77 @@
+//fv.scss
+@use "../../global/import" as f;
+
+.fv {
+		background: url(/img/main-pc.jpg) center center / cover no-repeat fixed;
+	width: 100%;
+	height: 814px;
+position: relative;
+color: f.$white-color;
+}
+
+.fv__header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 35px;
+	margin-right: 40px;
+}
+
+.fv__nav{
+	font-size: 16px;
+	padding-top: 35px;
+	ul{
+		display: flex;
+		gap: 35px;
+	}
+}
+
+.fv__navItem{
+	a{
+		color: f.$white-color;
+	}
+}
+
+.fv__instaIcon{
+	width: 30px;
+}
+
+.fv__logoBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.fv__logo{
+	width: 225px;
+}
+
+.fv__h1{
+	font-size: 46px;
+	margin-top: 70px;
+}
+
+.fv__scroll{
+	transform: rotate(90deg);
+	position:absolute;
+	bottom: 160px;
+	right: 10%;
+
+	a{
+		font-family: f.$english;
+		color: f.$white-color;
+		display: block;
+		position: relative;
+		&::after{
+			position: absolute;
+			top: 50%;
+			right: -125px;
+			background-color: f.$white-color;
+			content: '';
+			width: 110px;
+			height: 1px;
+		}
+	}
+}

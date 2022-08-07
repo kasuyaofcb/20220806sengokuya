@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* カラー============================== */ /* フォント============================== */
+/* フォントサイズ============================== */
+html {
+  font-size: 62.5%;
+  /*   @media screen and (max-width:$tab){
+     font-size: 50%;
+   } */
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+:after, :before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+hr {
+  overflow: visible;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+small {
+  font-size: 80%;
+}
+
+[hidden], template {
+  display: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+input {
+  border-radius: 0;
+}
+
+[role=button], [type=button], [type=reset], [type=submit], button {
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+[type=number] {
+  width: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+button {
+  overflow: visible;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: 0;
+  padding: 0;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-value {
+  color: currentColor;
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+img {
+  border-style: none;
+  vertical-align: bottom;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+@media screen {
+  [hidden~=screen] {
+    display: inherit;
+  }
+  [hidden~=screen]:not(:active):not(:focus):not(:target) {
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+  }
+}
+[aria-busy=true] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+button {
+  outline: none;
+}
+
+body {
+  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
+  color: #080808;
+  font-feature-settings: "palt";
+  background-color: #fff;
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ここから共通部分============================== */
+/* h1タイトル部分 */
+h1 {
+  font-size: 12.6rem;
+  color: #fff;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+/* h2タイトル部分 */
+h2 {
+  font-size: clamp(2.6rem, 1.6rem + 5vw, 3.5rem);
+  font-weight: bold;
+  color: #080808;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #080808;
+  letter-spacing: 0.1em;
+}
+
+p,
+button,
+a {
+  font-style: normal;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.innerWrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.br__sp {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .br__sp {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .br__pc {
+    display: none;
+  }
+}
+
+/* ここまで共通部分============================== */
+.fv {
+  background: url(/img/main-pc.jpg) center center/cover no-repeat fixed;
+  width: 100%;
+  height: 814px;
+  position: relative;
+  color: #fff;
+}
+
+.fv__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  margin-right: 40px;
+}
+
+.fv__nav {
+  font-size: 16px;
+  padding-top: 35px;
+}
+.fv__nav ul {
+  display: flex;
+  gap: 35px;
+}
+
+.fv__navItem a {
+  color: #fff;
+}
+
+.fv__instaIcon {
+  width: 30px;
+}
+
+.fv__logoBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fv__logo {
+  width: 225px;
+}
+
+.fv__h1 {
+  font-size: 46px;
+  margin-top: 70px;
+}
+
+.fv__scroll {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 160px;
+  right: 10%;
+}
+.fv__scroll a {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.fv__scroll a::after {
+  position: absolute;
+  top: 50%;
+  right: -125px;
+  background-color: #fff;
+  content: "";
+  width: 110px;
+  height: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */
