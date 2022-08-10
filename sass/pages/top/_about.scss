@@ -1,0 +1,71 @@
+//about.scss
+@use "../../global/import" as f;
+
+.about{
+	background: url(/img/about-back-pc.jpg) center center / cover no-repeat;
+    position: relative;
+}
+
+.about__gold{
+    position: absolute;
+    left: 0;
+    top: -150px;
+  width: 400px;
+}
+
+.about__inner{
+    padding: 125px 32px 100px;
+}
+
+.kodawari__title{
+    font-size: 4.5rem;
+    text-align: center;
+    color: f.$white-color;
+}
+
+.about__contentsBox{
+    display: flex;
+    gap: 100px;
+    margin-top: 96px;
+}
+
+.about__contentsTitle{
+    margin-top: 48px;
+}
+
+.about__contentsText{
+    margin-top: 36px;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+}
+
+.about__contentsBtn{
+    display: inline-block;
+    margin-top: 64px;
+    font-size: 2rem;
+    padding: 20px 60px;
+    border: 1px solid #000000;
+    color: #000000;
+    position: relative;
+    &::after{
+position: absolute;
+top: 50%;
+right: -30px;
+content: '';
+width: 60px;
+height: 1px;
+background-color: #000000;
+    }
+    &:hover::after{
+        transform: translate(15px);
+        transition: transform 0.3s;
+    }
+}
+
+.about__contentsRight{
+    margin-top: 88px;
+}
+
+.about__bottomImg{
+    width: 100vw;
+}

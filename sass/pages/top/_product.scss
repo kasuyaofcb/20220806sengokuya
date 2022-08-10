@@ -1,0 +1,63 @@
+//product.scss
+@use "../../global/import" as f;
+
+.product{
+	background: url(/img/about-back-pc.jpg) center center / cover no-repeat;
+    position: relative;
+}
+
+
+.product__inner{
+    padding: 125px 32px 74px;
+}
+
+.product__title{
+    font-size: 4.5rem;
+    text-align: center;
+    color: f.$txt-color;
+}
+
+.product__contentsTop{
+    display: flex;
+    gap: 100px;
+    margin-top: 96px;
+}
+
+.product__contentsTopImg{
+    max-width: 745px;
+}
+
+.product__textBox{
+    max-width: 525px;
+}
+
+.product__textTitle{
+    font-size: 3.5rem;
+    margin-top: 48px;
+}
+
+.product__text{
+    margin-top: 36px;
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+}
+
+.product__contentsBtn{
+margin-left: 180px;
+}
+
+.product__slide{
+    margin-top: 60px;
+}
+
+.swiper-wrapper{
+    gap: 20px;
+}
+
+.swiper-slide{
+    width: 455px !important;
+    height: 100%;
+    img{
+        width: 100%;
+    }
+}

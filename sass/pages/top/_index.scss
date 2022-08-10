@@ -1,2 +1,10 @@
 // //fvCSS
 @use "fv"; // ここでfvのCSS(SCSS)を呼び出す。
+// //newsCSS
+@use "news"; // ここでnewsのCSS(SCSS)を呼び出す。
+// //aboutCSS
+@use "about"; // ここでaboutのCSS(SCSS)を呼び出す。
+// //kodawariCSS
+@use "kodawari"; // ここでaboutのCSS(SCSS)を呼び出す。
+// //productCSS
+@use "product"; // ここでaboutのCSS(SCSS)を呼び出す。

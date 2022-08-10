@@ -1,60 +1,197 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="" />
-		<title>magazine</title>
-		<link rel="stylesheet" href="sass/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-		/>
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-	</head>
 
-	<body>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<title>magazine</title>
+	<link rel="stylesheet" href="sass/style.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;700&display=swap"
+		rel="stylesheet">
+</head>
 
-		<!-- ここからメインコンテンツ部分============================== -->
-		<main>
-			<!-- ここからファーストビュー部分============================== -->
-<section class="fv">
-<nav class="fv__nav">
-	<header class="fv__header">
-	<ul>
-		<li class="fv__navItem"><a href="#">肉の千石屋について</a></li>
-		<li class="fv__navItem"><a href="#">お肉へのこだわり</a></li>
-		<li class="fv__navItem"><a href="#">取り扱い商品</a></li>
-		<li class="fv__navItem"><a href="#">アクセス</a></li>
-	</ul>
-	<a href="#">
-	<img src="img/instagram-w.svg" alt="インスタグラムのアイコン" class="fv__instaIcon">
-</a>
-</header>
-</nav>
-<div class="fv__logoBox">
-<img src="img/logo-w.svg" alt="ロゴ" class="fv__logo">
-<h1 class="fv__h1">滋賀県犬上郡豊郷町の<br>
-	近江牛専門店</h1>
-</div>
-<div class="fv__scroll">
-<a href="#" >SCROLL</a>
-</div>
-</section>
+<body>
+
+	<!-- ここからメインコンテンツ部分============================== -->
+	<main>
+		<!-- ここからファーストビュー部分============================== -->
+		<section class="fv">
+			<nav class="fv__nav">
+				<header class="fv__header">
+					<ul>
+						<li class="fv__navItem"><a href="#">肉の千石屋について</a></li>
+						<li class="fv__navItem"><a href="#">お肉へのこだわり</a></li>
+						<li class="fv__navItem"><a href="#">取り扱い商品</a></li>
+						<li class="fv__navItem"><a href="#">アクセス</a></li>
+					</ul>
+					<a href="#">
+						<img src="img/instagram-w.svg" alt="インスタグラムのアイコン" class="fv__instaIcon">
+					</a>
+				</header>
+			</nav>
+			<div class="fv__logoBox">
+				<img src="img/logo-w.svg" alt="ロゴ" class="fv__logo">
+				<h1 class="fv__h1">滋賀県犬上郡豊郷町の<br>
+					近江牛専門店</h1>
+			</div>
+			<div class="fv__scroll">
+				<a href="#">SCROLL</a>
+			</div>
+		</section>
+
+		<section class="news">
+			<div class="news__inner">
+				<ul class="news__box">
+					<li>
+						<p class="news__category">商品紹介</p>
+						<p class="news__date">2022.06.15</p>
+						<p class="news__text">テキストテキストテキストテキスト</p>
+					</li>
+					<li>
+						<p class="news__category">商品紹介</p>
+						<p class="news__date">2022.06.15</p>
+						<p class="news__text">テキストテキストテキストテキストテキスト</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="about">
+			<img src="img/gold.png" alt="金色の紙吹雪" class="about__gold">
+			<div class="about__inner innerWrapper">
+				<h2 class="about__title">肉の千石屋について</h2>
+				<div class="about__contentsBox">
+					<div class="about__contentsLeft">
+						<img src="img/about1.jpg" alt="畳のお座席" class="about__contentsLeftImg">
+						<h3 class="about__contentsTitle">こだわりの一頭買い<br>
+							豊郷のお肉屋さん。</h3>
+						<p class="about__contentsText">
+							肉の千石屋は昭和27年（1952年）創業の和牛専門店です。代々伝わる牛の知識、肉質の良し悪しを自らの目で厳選し近江牛（黒毛和牛）を販売しております。<br>
+							いつ食べても美味しいと喜んで頂けるような牛を厳選し一頭買いしています。<br>
+							私たちの想いを「美味しいお肉」と「いらっしゃいませ」にこめてお届けします。
+						</p>
+						<a href="#" class="about__contentsBtn btn">肉の千石屋について知る</a>
+					</div>
+					<div class="about__contentsRight">
+						<img src="img/about2.jpg" alt="お店の外観">
+					</div>
+				</div>
+			</div>
+			<img src="img/about-under-pc.jpg" alt="木の隙間から見える外観" class="about__bottomImg">
+		</section>
+
+		<section class="kodawari">
+			<img src="img/gold.png" alt="金色の紙吹雪" class="kodawari__gold">
 
 
-		</main>
-		<!-- ここまでメインコンテンツ部分============================== -->
+			<ul class="kodawari__contentsBox">
+				<li class="kodawari__contentsItem kodawari__contentsItem1">
+					<h2 class="kodawari__title">千石屋のこだわり</h2>
+					<div class="kodawari__contentsItem1Box">
+						<img src="img/kodawari1.png" alt="牛"
+							class="kodawari__contents1LeftImg kodawari__contents1LeftImgOdd">
+						<div class="kodawari__disc kodawari__disc1">
 
-			<!-- ここからフッター部分============================== -->
+							<p class="kodawari__discTitle">
+								一頭買いだからこその品質と価格
+								<span class="kodawari__no">
+									こだわり<span>01</span>
+								</span>
+							</p>
+							<p class="kodawari__discText">
+								枝肉卸業者に定期的に足を運び自ら目利きしいつ食べても美味しいと喜んで頂けるような牛を厳選し一頭買いしています。<br>
+								また当店は自社店舗、自社家屋で家族経営にこだわりコストを削減していいお肉をリーズナブルに提供できるようにしています。
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="kodawari__contentsItem">
+					<img src="img/kodawari2.png" alt="新鮮な精肉"
+						class="kodawari__contents1LeftImg kodawari__contents1LeftImgEven">
+					<div class="kodawari__disc kodawari__disc2">
+
+
+						<p class="kodawari__discTitle kodawari__discTitle2">
+							新鮮なお肉をお届け<br>
+							徹底した鮮度管理
+
+							<span class="kodawari__no kodawari__noEven">
+								こだわり<span>02</span>
+							</span>
+						</p>
+
+						<p class="kodawari__discText">
+							肉の千石屋は昭和27年（1952年）創業の和牛専門店です。代々伝わる牛の知識、肉質の良し悪しを自らの目で厳選し近江牛（黒毛和牛）を販売しております。<br>
+							いつ食べても美味しいと喜んで頂けるような牛を厳選し一頭買いしています。<br>
+							私たちの想いを「美味しいお肉」と「いらっしゃいませ」にこめてお届けします。
+						</p>
+					</div>
+				</li>
+				<li class="kodawari__contentsItem kodawari__contentsItem3">
+					<img src="img/gold2.png" alt="金の紙吹雪" class="kodawari__gold2">
+					<img src="img/kodawari3.png" alt="肉の品質目利き"
+						class="kodawari__contents1LeftImg kodawari__contents1LeftImgOdd">
+					<div class="kodawari__disc kodawari__disc3">
+
+						<p class="kodawari__discTitle">
+							経験から成る知識<br>
+							見極めの目利きと技術
+							<span class="kodawari__no">
+								こだわり<span>03</span>
+							</span>
+						</p>
+						<p class="kodawari__discText">
+							最高のお肉を、最高の状態で味わっていただきたい。<br>
+							千石屋ではその日の仕入れるお肉の品質によって、お店を閉めることがあります。それは、最高のものだけをお客様に味わってい
+							ただきたいからです。お肉の状態を見極め、店主のこだわりのお肉しかありません。
+						</p>
+					</div>
+				</li>
+			</ul>
+
+		</section>
+		<section class="product">
+			<div class="product__inner">
+			<h2 class="product__title">取り扱い商品</h2>
+			<div class="product__contentsTop">
+				<img src="img/product.png" alt="霜降り肉" class="product__contentsTopImg">
+				<div class="product__textBox">
+					<h3 class="product__textTitle">美味しさそのものをお届け。<br>
+						肉の千石屋のこだわりの逸品。</h3>
+						<p class="product__text">こだわりのお肉をはじめ、毎日の献立に嬉しいリーズナブルなお肉をご提供。食卓で味わっていただくシーンを想像して、枝肉卸業者に定期的に足を運び自ら目利きし新鮮なお肉をお客様にお届けいたします。</p>
+						<a href="#" class="product__contentsBtn btn">取り扱い商品を見る</a>
+				</div>
+			</div>
+			<div class="product__slide swiper">
+				<!-- 必要に応じたwrapper -->
+				<div class="swiper-wrapper">
+				  <!-- スライド -->
+				  <div class="swiper-slide"><img src="img/product-1.jpg" alt="取扱い商品1"></div>
+				  <div class="swiper-slide"><img src="img/product-2.jpg" alt="取扱い商品2"></div>
+				  <div class="swiper-slide"><img src="img/product-3.jpg" alt="取扱い商品3"></div>
+				  <div class="swiper-slide"><img src="img/product-4.jpg" alt="取扱い商品4"></div>
+				</div>
+			  </div>
+			</div>
+
+		</section>
+
+	</main>
+	<!-- ここまでメインコンテンツ部分============================== -->
+
+	<!-- ここからフッター部分============================== -->
 
 
 
-		<script src="js/main.js"></script>
-		<script src="js/swiper.js"></script>
-	</body>
+	<script src="js/main.js"></script>
+	<script src="js/swiper.js"></script>
+</body>
+
 </html>
