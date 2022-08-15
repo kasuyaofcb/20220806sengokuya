@@ -10,13 +10,28 @@
     right: 0;
     top: -80px;
   width: 400px;
+  @media (max-width: 1000px) {
+max-width: 375px;
+top: 280px;
+right: unset;
+transform: translateX(-50%);
+left: 50%;
+            }
 }
 
 
 
 .kodawari__title{
-    font-size: 4.5rem;
     text-align: center;
+    color: f.$white-color;
+    @media (max-width: 1000px) {
+  margin-bottom: 70px;
+
+            }
+}
+
+.kodawari__contentsBox{
+    overflow-x: hidden;
 }
 
 .kodawari__contentsItem{
@@ -24,11 +39,22 @@
     align-items: flex-end;
     background: url(/img/kodawari01-back.jpg) center center / cover no-repeat;
     padding: 64px 32px;
+
+    @media (max-width: 1000px) {
+flex-direction: column;
+align-items: center;
+padding: 100px 32px;
+	}
     &:nth-child(even){
 flex-direction: row-reverse;
 justify-self: flex-start;
 background: url(/img/kodawari02-back.jpg) center center / cover no-repeat;
 padding: 64px 32px;
+@media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 32px;
+          }
     }
 }
 
@@ -39,8 +65,14 @@ padding: 64px 32px;
 .kodawari__contentsItem1Box{
     display: flex;
     align-items: flex-end;
-    background: url(/img/kodawari01-back.jpg) center center / cover no-repeat;
     padding: 64px 32px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 36px;
+            }
+
+
 }
 
 
@@ -57,12 +89,27 @@ padding: 64px 32px;
 .kodawari__contents1LeftImg{
     max-width: 675px;
     transform: translateX(-100px);
+    @media (max-width: 1200px) {
+        max-width: 550px;
+              }
+    @media (max-width: 1000px) {
+        width: 70%;
+        transform: translateX(-0px);
+              }
 }
 .kodawari__contents1LeftImgOdd{
     transform: translateX(-100px);
+    @media (max-width: 1000px) {
+        width: 70%;
+        transform: translateX(-0px);
+              }
 }
 .kodawari__contents1LeftImgEven{
     transform: translateX(30px);
+    @media (max-width: 1000px) {
+        width: 100%;
+        transform: translateX(30px);
+              }
 }
 
 .kodawari__titleBox2{
@@ -79,6 +126,11 @@ border-bottom: 1px solid f.$white-color ;
     padding-bottom: 30px;
     border-bottom: 1px solid f.$white-color ;
     position: relative;
+    @media (max-width: 1000px) {
+        font-size: 32px;
+margin-top: 60px;
+text-align: center;
+            }
 }
 
 .kodawari__no{
@@ -91,6 +143,10 @@ border-bottom: 1px solid f.$white-color ;
   background: url(/img/kodawari-title.png) center center / cover no-repeat;
   background-position: 0px 8px;
   width: 250px;
+  @media (max-width: 1000px) {
+    display: none;
+            }
+
   span{
       display: inline-block;
       transform: rotate(9.85deg);
@@ -101,11 +157,14 @@ border-bottom: 1px solid f.$white-color ;
   .kodawari__noEven{
       top: 30px;
       right: -60px;
+      @media (max-width: 1250px) {
+        top: -88px;
+    right: 200px;
+                }
   }
 
 .kodawari__discText{
     margin-top: 36px;
-    font-size: 2rem;
     letter-spacing: 0.12em;
 }
 
@@ -119,7 +178,6 @@ border-bottom: 1px solid f.$white-color ;
 
 .kodawari__contentsItem3{
     position: relative;
-    padding-top: 140px;
 }
 
 .kodawari__gold2{
@@ -127,4 +185,41 @@ border-bottom: 1px solid f.$white-color ;
     position: absolute;
     top: -50px;
     right: 0;
+    @media (max-width: 1000px) {
+     max-width: 375px;
+     top: 240px;
+     right: unset;
+     left: 50%;
+     transform: translateX(-50%);
+
+                }
+}
+
+.kodawari__noSp{
+    display: none;
+    position: static;
+    color: f.$white-color;
+margin: 0 auto 40px;
+text-align: center;
+    @media (max-width: 1000px) {
+    display: block;
+    width: 270px;
+            }
+}
+.kodawari__contentsItem{
+    position: relative;
+}
+
+.kodawari__goldSp{
+    position: absolute;
+    display: none;
+    @media (max-width: 1000px) {
+        display: block;
+        max-width: 375px;
+        top: 100px;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+
+                   }
 }

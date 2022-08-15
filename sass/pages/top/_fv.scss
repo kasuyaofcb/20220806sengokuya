@@ -7,6 +7,9 @@
 	height: 814px;
 position: relative;
 color: f.$white-color;
+@media screen and (max-width: 600px) {
+	background: url(/img/main-sp.jpg) center center / cover no-repeat fixed;
+}
 }
 
 .fv__header{
@@ -15,6 +18,16 @@ color: f.$white-color;
 	align-items: center;
 	gap: 35px;
 	margin-right: 40px;
+	ul{
+		@media screen and (max-width: 1000px) {
+			display: none;
+			}
+	}
+	a{
+		@media screen and (max-width: 1000px) {
+			display: none;
+			}
+	}
 }
 
 .fv__nav{
@@ -29,6 +42,7 @@ color: f.$white-color;
 .fv__navItem{
 	a{
 		color: f.$white-color;
+		font-size: 20px;
 	}
 }
 
@@ -42,35 +56,157 @@ color: f.$white-color;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	@media screen and (max-width: 600px) {
+	max-width: 380px;
+				}
 }
 
 .fv__logo{
 	width: 225px;
+	@media screen and (max-width: 600px) {
+		width: 184px;
+				}
 }
 
 .fv__h1{
 	margin-top: 70px;
+	@media screen and (max-width: 600px) {
+font-size: 34px;
+		}
 }
 
 .fv__scroll{
 	transform: rotate(90deg);
 	position:absolute;
-	bottom: 160px;
+	bottom: 180px;
 	right: 10%;
+	@media screen and (max-width: 600px) {
+		bottom: 120px;
+					}
 
 	a{
 		font-family: f.$english;
 		color: f.$white-color;
 		display: block;
 		position: relative;
+		font-size: 3rem;
+		@media screen and (max-width: 600px) {
+			font-size: 1.4rem;
+					}
 		&::after{
 			position: absolute;
 			top: 50%;
-			right: -125px;
+			right: -100px;
 			background-color: f.$white-color;
 			content: '';
 			width: 110px;
 			height: 1px;
+			@media screen and (max-width: 600px) {
+				width: 90px;
+						}
 		}
 	}
+}
+
+
+.fv__humTarget{
+	display: none;
+	width: 40px;
+	@media screen and (max-width: 1000px) {
+	display: block;
+	}
+	p{
+		font-size: 10px;
+	}
+}
+
+.fv__spMenu{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	padding:25px 20px;
+	background-color: f.$txt-color;
+	width: 100vw;
+	height: 100vh;
+	transform: translateX(-100%);
+	ul{
+		display: flex;
+		flex-direction: column;
+gap: 35px;
+li{
+	a{
+		color: f.$white-color;
+		font-size: 2.2rem;
+	}
+}
+	}
+}
+
+.fv__spMenuClose{
+	width: 30px;
+align-self: flex-end;
+	img{
+		width: 100%;
+	}
+	p{
+		color: f.$white-color;
+		font-size: 10px;
+		text-align: center;
+	}
+}
+
+.fv__spInstaBox{
+    display: flex;
+ p{
+	 margin-left: 15px;
+	 font-size: 2.2rem;
+ }
+}
+
+.fv__spMenuIconInsta{
+	fill: f.$white-color;
+	width: 25px;
+}
+
+.fv__spBtn{
+	width: 350px;
+	padding:15px 85px 15px 25px;
+	color: f.$white-color;
+	border: 1px solid f.$white-color;
+	&::after{
+background-color: f.$white-color;
+	}
+	.fv__spMenuMailIcon{
+		transform: translate(9px,3px);
+	}
+}
+
+
+
+.fv__spMenuMailIcon{
+	fill: f.$white-color;
+	width: 25px;
+}
+
+.fv__spMenuAddress{
+	display: flex;
+	flex-direction: column;
+margin-top: 40px;
+gap: 10px;
+color: f.$white-color;
+font-size: 1.6rem;
+dl{
+	display: flex;
+	gap: 15px;
+	dt{
+width: 66px;
+display: flex;
+justify-content: space-between;
+	}
+}
 }

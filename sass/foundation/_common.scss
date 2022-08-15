@@ -32,12 +32,12 @@ h1 {
 /* h2タイトル部分 */
 
 h2 {
-	font-size: clamp(2.6rem, 4.5rem, 4.5rem);
+	font-size: clamp(3.2rem, 4.5rem, 4.5rem);
 	color: f.$txt-color;
 	letter-spacing: 0.1em;
 	font-weight: 400;
 	@media (max-width: 600px) {
-		font-size: 2.6rem;
+		font-size: 3.2rem;
 	}
 }
 
@@ -46,6 +46,9 @@ h3 {
 	color: f.$txt-color;
 	letter-spacing: 0.1em;
 	font-weight: 400;
+	@media (max-width: 600px) {
+		font-size: 3.0rem;
+	}
 }
 
 p,
@@ -54,7 +57,10 @@ a {
 	font-style: normal;
 	letter-spacing: 0.05em;
 	line-height: 1.8;
-	font-size: 16px;
+	font-size: 2rem;
+	@media screen and (max-width: 600px) {
+		font-size: 1.6rem;
+								  }
 }
 
 .innerWrapper {
@@ -84,6 +90,10 @@ a {
     border: 1px solid #000000;
     color: #000000;
     position: relative;
+	@media screen and (max-width: 600px) {
+	font-size: 1.6rem;
+	padding: 20px 3br0px;
+							  }
     &::after{
 position: absolute;
 top: 50%;

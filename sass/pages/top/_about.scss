@@ -11,42 +11,70 @@
     left: 0;
     top: -150px;
   width: 400px;
+  @media screen and (max-width: 1000px) {
+  max-width: 375px;
+  left: unset;
+  right: 0;
+               }
 }
 
 .about__inner{
     padding: 125px 32px 100px;
+    @media screen and (max-width: 1000px) {
+        padding: 125px 0 120px;
+                   }
 }
 
-.kodawari__title{
-    font-size: 4.5rem;
+.about__title{
     text-align: center;
-    color: f.$white-color;
+    color: f.$txt-color;
 }
 
 .about__contentsBox{
     display: flex;
-    gap: 100px;
+    column-gap: 100px;
     margin-top: 96px;
+    @media screen and (max-width: 1000px) {
+     flex-direction: column;
+
+                }
+
 }
+
+
 
 .about__contentsTitle{
     margin-top: 48px;
+
+   @media screen and (max-width: 1000px) {
+        padding:  0 32px;
+                   }
 }
+
 
 .about__contentsText{
     margin-top: 36px;
-    font-size: 2rem;
     letter-spacing: 0.2em;
+    @media screen and (max-width: 1000px) {
+        padding:  0 32px;
+                   }
 }
+
 
 .about__contentsBtn{
     display: inline-block;
     margin-top: 64px;
-    font-size: 2rem;
     padding: 20px 60px;
     border: 1px solid #000000;
     color: #000000;
     position: relative;
+    @media screen and (max-width: 1000px) {
+    margin-left: 32px;
+                   }
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        text-align: center;
+                   }
     &::after{
 position: absolute;
 top: 50%;
@@ -64,8 +92,19 @@ background-color: #000000;
 
 .about__contentsRight{
     margin-top: 88px;
+    @media screen and (max-width: 1000px) {
+text-align: right;
+margin-top: 72px;
+                          }
+    img{
+        @media screen and (max-width: 1000px) {
+         width: 80%;
+                           }
+    }
 }
 
-.about__bottomImg{
-    width: 100vw;
+picture{
+    img{
+        width:100%;
+    };
 }

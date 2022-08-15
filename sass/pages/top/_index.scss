@@ -5,6 +5,8 @@
 // //aboutCSS
 @use "about"; // ここでaboutのCSS(SCSS)を呼び出す。
 // //kodawariCSS
-@use "kodawari"; // ここでaboutのCSS(SCSS)を呼び出す。
+@use "kodawari"; // ここでkodawariのCSS(SCSS)を呼び出す。
 // //productCSS
-@use "product"; // ここでaboutのCSS(SCSS)を呼び出す。
+@use "product"; // ここでproductのCSS(SCSS)を呼び出す。
+// //storeCSS
+@use "store"; // ここでstoreのCSS(SCSS)を呼び出す。
