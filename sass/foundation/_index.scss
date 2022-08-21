@@ -3,3 +3,6 @@
 
 // //全体用CSS
 @forward "common"; // ここで全体のCSS(SCSS)を呼び出す。
+
+// //footerCSS
+@forward "footer"; // ここでフッターのCSS(SCSS)を呼び出す。
