@@ -59,6 +59,9 @@
         background: url(/img/kodawari02-back.jpg) center center / cover no-repeat;
         padding: 64px 32px;
 
+        @media (max-width: 1250px) {
+            padding: 120px 20px;
+        }
         @media (max-width: 1000px) {
             flex-direction: column;
             align-items: center;

@@ -1237,6 +1237,11 @@ picture img {
   background: url(/img/kodawari02-back.jpg) center center/cover no-repeat;
   padding: 64px 32px;
 }
+@media (max-width: 1250px) {
+  .kodawari__contentsItem:nth-child(even) {
+    padding: 120px 20px;
+  }
+}
 @media (max-width: 1000px) {
   .kodawari__contentsItem:nth-child(even) {
     flex-direction: column;
