@@ -686,7 +686,7 @@ footer {
   position: relative;
   color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .fv {
     background: url(/img/main-sp.jpg) center center/cover no-repeat fixed;
     height: 650px;
