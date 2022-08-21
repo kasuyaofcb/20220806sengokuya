@@ -1278,11 +1278,11 @@ picture img {
   padding-bottom: 90px;
 }
 
-.kodawari__disc1 {
+.kodawari__disc2 {
   transform: translateX(80px);
 }
 @media (max-width: 1000px) {
-  .kodawari__disc1 {
+  .kodawari__disc2 {
     transform: translateX(0);
   }
 }
