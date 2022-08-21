@@ -10,7 +10,7 @@
 .merit__inner {
     color: f.$white-color;
     padding: 140px 32px;
-
+position: relative;
     @media screen and (max-width: 600px) {
         padding: 54px 20px 80px;
         position: relative;
@@ -142,6 +142,18 @@
     opacity: 0.8;
 
     @media screen and (max-width: 600px) {
+        display: block;
+
+    }
+}
+
+.merit__goldBottomSp{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+	opacity: 0.7;
+	@media screen and (max-width: 600px) {
         display: block;
 
     }

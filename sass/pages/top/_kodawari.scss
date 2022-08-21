@@ -190,7 +190,7 @@
 
     span {
         display: inline-block;
-        transform: rotate(9.85deg);
+        transform: rotate(9.85deg) translate(7px, 7px);
         font-size: 5rem;
     }
 }
@@ -230,7 +230,7 @@
 
     @media (max-width: 1000px) {
         max-width: 375px;
-        top: 240px;
+        top: 160px;
         right: unset;
         left: 50%;
         transform: translateX(-50%);
