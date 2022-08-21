@@ -10,7 +10,7 @@
     color: f.$white-color;
 
     @media screen and (max-width: 600px) {
-        background: url(/img/main-sp.png) center center / cover no-repeat fixed;
+        background: url(/img/main-sp.png) center center / cover no-repeat;
         height: 650px;
     }
 }
