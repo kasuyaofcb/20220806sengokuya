@@ -18,6 +18,9 @@ color: f.$white-color;
 	align-items: center;
 	gap: 35px;
 	margin-right: 40px;
+	@media screen and (max-width: 600px) {
+		margin-right: 20px;
+		}
 	ul{
 		@media screen and (max-width: 1000px) {
 			display: none;
@@ -58,6 +61,7 @@ color: f.$white-color;
 	text-align: center;
 	@media screen and (max-width: 600px) {
 	max-width: 380px;
+	width: 100%;
 				}
 }
 
@@ -71,7 +75,10 @@ color: f.$white-color;
 .fv__h1{
 	margin-top: 70px;
 	@media screen and (max-width: 600px) {
-font-size: 34px;
+font-size: 3.4rem;
+		}
+	@media screen and (max-width: 380px) {
+font-size: 3rem;
 		}
 }
 
@@ -84,7 +91,7 @@ font-size: 34px;
 		bottom: 120px;
 					}
 
-	a{
+	div{
 		font-family: f.$english;
 		color: f.$white-color;
 		display: block;
@@ -101,10 +108,32 @@ font-size: 34px;
 			content: '';
 			width: 110px;
 			height: 1px;
+			content: "";
+			transform: rotate(180deg);
+			/*線の動き1.4秒かけて動く。永遠にループ*/
+		  animation: pathmove 1.8s ease-in-out infinite;
+		  opacity:0;
 			@media screen and (max-width: 600px) {
 				width: 90px;
 						}
 		}
+		/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+	0%{
+	  width: 0;
+	  right:-20px;
+	  opacity: 0;
+	}
+	70%{
+	  width:60px;
+	  opacity: 1;
+	}
+	100%{
+	  width:0;
+	  right:-150px;
+	  opacity: 0;
+	}
+  }
 	}
 }
 
@@ -120,32 +149,40 @@ font-size: 34px;
 	}
 }
 
+
+
 .fv__spMenu{
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	display: flex;
 	flex-direction: column;
-	padding:25px 20px;
+	padding:40px 20px;
 	background-color: f.$txt-color;
 	width: 100vw;
 	height: 100vh;
-	transform: translateX(-100%);
-	ul{
+	transform: translateX(100%);
+	transition: transform 0.3s;
+	.fv__spMenuItems{
 		display: flex;
 		flex-direction: column;
-gap: 35px;
+gap: unset;
 li{
 	a{
 		color: f.$white-color;
 		font-size: 2.2rem;
+		width: 100%;
+    display: block;
+    padding: 20px 0;
 	}
 }
 	}
-}
+
+
+
 
 .fv__spMenuClose{
 	width: 30px;
@@ -178,6 +215,9 @@ align-self: flex-end;
 	padding:15px 85px 15px 25px;
 	color: f.$white-color;
 	border: 1px solid f.$white-color;
+	@media screen and (max-width: 450px) {
+		width: 80%;
+				}
 	&::after{
 background-color: f.$white-color;
 	}
@@ -209,4 +249,12 @@ display: flex;
 justify-content: space-between;
 	}
 }
+}
+}
+
+.fv__nav--on{
+	.fv__spMenu{
+		transform: translateX(0%);
+		transition: transform 0.3s;
+	}
 }

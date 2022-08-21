@@ -37,7 +37,7 @@ h2 {
 	letter-spacing: 0.1em;
 	font-weight: 400;
 	@media (max-width: 600px) {
-		font-size: 3.2rem;
+		font-size: 2rem;
 	}
 }
 
@@ -84,7 +84,7 @@ a {
 
 .btn{
     display: inline-block;
-    margin-top: 64px;
+
     font-size: 2rem;
     padding: 20px 60px;
     border: 1px solid #000000;
@@ -92,7 +92,7 @@ a {
     position: relative;
 	@media screen and (max-width: 600px) {
 	font-size: 1.6rem;
-	padding: 20px 3br0px;
+	padding: 20px 30px;
 							  }
     &::after{
 position: absolute;
@@ -107,6 +107,24 @@ background-color: #000000;
         transform: translate(15px);
         transition: transform 0.3s;
     }
+}
+
+.contact-btn{
+
+		margin-top: 25px;
+		padding: 15px 64px;
+		font-size: 2.4rem;
+		color: f.$txt-color;
+		background: f.$white-color;
+		display: inline-block;
+		border-radius: 54px;
+		span{
+			img{
+width:28px;
+transform: translate(10px, -11px);
+			}
+		}
+
 }
 
 /* ここまで共通部分============================== */

@@ -2,12 +2,20 @@
 {
 
 //ハンバーガーメニュー
-function hamburger(){
-    document.querySelector('.header__navSp').classList.toggle('header__navSp--on');
+function humburgerOn(){
+    document.querySelector('.fv__nav').classList.toggle('fv__nav--on');
 }
 
-document.querySelector('.header__navSpTarget').addEventListener('click',()=>{
-    hamburger();
+document.querySelector('.fv__humTarget').addEventListener('click',()=>{
+    humburgerOn();
+})
+
+function humburgerOff(){
+    document.querySelector('.fv__nav').classList.toggle('fv__nav--on');
+}
+
+document.querySelector('.fv__spMenu').addEventListener('click',()=>{
+    humburgerOff();
 })
 
 }

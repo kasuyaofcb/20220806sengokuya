@@ -1,0 +1,86 @@
+//store.scss
+@use "../../global/import" as f;
+
+
+.contact{
+
+background: url(/img/Kodawari/contact.jpg) center center / cover no-repeat;
+@media (max-width:600px) {
+    background: url(/img/Kodawari/contact_sp.png) center center / cover no-repeat;
+
+               }
+}
+
+
+
+
+.contact__inner{
+    padding: 88px 0;
+text-align: center;
+
+  }
+
+  .contact__text{
+    color: f.$white-color;
+    font-size: 3.5rem;
+    @media (max-width: 1000px) {
+        font-size: 2rem;
+
+                   }
+  }
+
+  .contact__toContactBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-top: 72px;
+    @media (max-width: 700px) {
+       flex-direction: column;
+       row-gap: 20px;
+
+                   }
+  }
+
+  .contact__tel{
+		font-size: 3.8rem;
+		color: f.$white-color;
+		border-radius: 54px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 700px) {
+            color: f.$txt-color;
+           background-color: f.$white-color;
+font-size: 2.2rem;
+padding: 15px 64px;
+                        }
+		span{
+            margin-right: 30px;
+            @media (max-width: 700px) {
+                margin-right: 15px;
+                               }
+			img{
+width:36px;
+transform: translate(10px, -11px);
+			}
+            .contact__telIcon{
+                @media (max-width: 700px) {
+                 display: none;
+
+                                }
+            }
+            .contact__telIconSp{
+                display: none;
+                @media (max-width: 700px) {
+                 display: block;
+                 width: 20px;
+transform: translateY(0px);
+                                }
+            }
+		}
+
+  }
+
+  .contact__btn{
+      margin: 0;
+  }

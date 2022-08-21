@@ -1,0 +1,69 @@
+//fv.scss
+@use "../../global/import" as f;
+
+
+.history{
+	z-index: -5;
+	position: relative;
+}
+.hisotry__goldTop{
+	top: 0;
+}
+
+.history__goldBox1{
+	position: absolute;
+	top: 0 ;
+	left: 0;
+max-width: 410px;
+@media screen and (max-width: 600px) {
+	max-width: 200px;
+								}
+}
+.history__goldTop{
+	width: 100%;
+}
+
+.history__inner{
+	padding-top: 130px;
+	@media screen and (max-width: 600px) {
+	padding: 54px 0 80px;
+								}
+}
+
+.hisotry__contentsBox{
+	align-items: center;
+	max-width: 1200px;
+    column-gap: 48px;
+	margin-bottom: 150px;
+	@media screen and (max-width: 1000px) {
+		flex-direction: column-reverse;
+	}
+	@media screen and (max-width: 600px) {
+		margin-top: 30px;
+		margin-bottom: 0;
+									}
+
+}
+
+.history__contentsTitle{
+	padding: 32px 32px 0;
+	@media screen and (max-width: 600px) {
+	font-size: 2rem;
+									}
+}
+
+.history__contentsText{
+	@media screen and (max-width: 600px) {
+		margin-top: 24px;
+										}
+}
+
+.history__contentsLeft{
+	max-width: 538px;
+}
+
+.history__contentsRight{
+	@media screen and (max-width: 1000px) {
+text-align: center;
+	}
+}
