@@ -1,18 +1,19 @@
 //fv.scss
-@use "../../global/import" as f;
+@use "../../global/import"as f;
 
 
 
 
-.kodawariFv__main{
-	// background: url(/img/kodawari/title.jpg) no-repeat fixed;
-	object-fit: cover;
-	background-size: cover;
-	position: relative;
-	@media screen and (max-width: 600px) {
-		// background: url(/img/kodawari/title_sp.png) no-repeat fixed;
-		// height: 150px;
-	}
+.kodawariFv__main {
+    // background: url(/img/kodawari/title.jpg) no-repeat fixed;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+        // background: url(/img/kodawari/title_sp.png) no-repeat fixed;
+        // height: 150px;
+    }
 }
 
 .subHeader__nav {

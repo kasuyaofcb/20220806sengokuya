@@ -1,339 +1,370 @@
 //fv.scss
-@use "../../global/import" as f;
+@use "../../global/import"as f;
 
-.subKodawari{
-position: relative;
-padding: 0 32px;
-@media (max-width: 1100px) {
-padding: 0;
+.subKodawari {
+    position: relative;
+    padding: 0 32px;
 
-			  }
-}
+    @media (max-width: 1100px) {
+        padding: 0;
 
-.subKodawari__inner{
-	padding: 115px 0 0;
-	@media screen and (max-width: 600px) {
-		padding:54px 0px 80px;
-position: relative;
-overflow-y: hidden;
-									}
-}
-
-
-
-.subKodawari__gold{
-	position: absolute;
-	right: 0;
-	top:0;
-	max-width: 410px;
-	z-index: 1;
-	@media screen and (max-width: 600px) {
-        max-width: 200px;
-                                }
-}
-
-
-
-.subKodawari__title{
-    text-align: center;
-    color: f.$txt-color;
-	margin-bottom: 100px;
-    @media (max-width: 1000px) {
-  margin-bottom: 120px;
-
-            }
-}
-
-.subKodawari__contentsBox{
-    overflow-x: hidden;
-	@media (max-width: 1100px) {
-		overflow-x: unset;
-				}
-}
-
-.subKodawari__contentsItem{
-    display: flex;
-	column-gap: 45px;
-    align-items: flex-end;
-    padding-bottom:  230px;
-
-	@media (max-width: 1100px) {
-		flex-direction: column;
-		align-items: center;
-		position: relative;
-		padding-bottom:  0;
-			}
-
-
-    &:nth-child(even){
-flex-direction: row-reverse;
-justify-self: flex-start;
-@media (max-width: 1100px) {
-    flex-direction: column;
-    align-items: center;
-
-          }
     }
 }
 
-.subKodawari__backImg{
-	display: none;
-	position: absolute;
-	width: 70%;
-	transform: translate(50px, -50px);
-	@media (max-width: 1100px) {
-	display: block;
-			}
-	@media (max-width: 600px) {
-	display: block;
-	width: 100%;
-	transform: translate(0px, -50px);
-			}
+.subKodawari__inner {
+    padding: 115px 0 0;
+
+    @media screen and (max-width: 600px) {
+        padding: 54px 0px 80px;
+        position: relative;
+        overflow-y: hidden;
+    }
+}
+
+
+
+.subKodawari__gold {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 410px;
+    z-index: 1;
+
+    @media screen and (max-width: 600px) {
+        max-width: 200px;
+    }
+}
+
+
+
+.subKodawari__title {
+    text-align: center;
+    color: f.$txt-color;
+    margin-bottom: 100px;
+
+    @media (max-width: 1000px) {
+        margin-bottom: 120px;
+
+    }
+}
+
+.subKodawari__contentsBox {
+    overflow-x: hidden;
+
+    @media (max-width: 1100px) {
+        overflow-x: unset;
+    }
+}
+
+.subKodawari__contentsItem {
+    display: flex;
+    column-gap: 45px;
+    align-items: flex-end;
+    padding-bottom: 230px;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-bottom: 0;
+    }
+
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        justify-self: flex-start;
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
+}
+
+.subKodawari__backImg {
+    display: none;
+    position: absolute;
+    width: 70%;
+    transform: translate(50px, -50px);
+
+    @media (max-width: 1100px) {
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+        display: block;
+        width: 100%;
+        transform: translate(0px, -50px);
+    }
 
 }
 
 
-.subKodawari__contentsItem1Box{
+.subKodawari__contentsItem1Box {
     display: flex;
     padding: 64px 32px;
+
     @media (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
         padding: 0 36px;
-            }
+    }
 
 
 }
 
 
-.subKodawari__disc{
-  text-align: left;
-  color: f.$txt-color;
-  max-width: 650px;
-  padding: 125px 72px;
-  @media (max-width: 1000px) {
-	padding: 40px 72px;
-							   }
-  @media (max-width: 600px) {
-	padding: 40px 20px 0;
-							   }
+.subKodawari__disc {
+    text-align: left;
+    color: f.$txt-color;
+    max-width: 650px;
+    padding: 125px 72px;
+
+    @media (max-width: 1000px) {
+        padding: 40px 72px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 40px 20px 0;
+    }
 }
 
-.subKodawari__disc1{
+.subKodawari__disc1 {
     padding-bottom: 90px;
-	background: url(/img/Kodawari/kodawari01-back.jpg) center center / cover no-repeat;
-	@media (max-width: 1100px) {
-	background: none;
-			}
+    background: url(/img/Kodawari/kodawari01-back.jpg) center center / cover no-repeat;
+
+    @media (max-width: 1100px) {
+        background: none;
+    }
 
 }
 
-.subKodawari__disc2{
-	padding-bottom: 90px;
-	background: url(/img/Kodawari/kodawari02-back.jpg) center center / cover no-repeat;
-	@media (max-width: 1100px) {
-		background: none;
-				}
+.subKodawari__disc2 {
+    padding-bottom: 90px;
+    background: url(/img/Kodawari/kodawari02-back.jpg) center center / cover no-repeat;
 
-}
-.subKodawari__disc3{
-	background: url(/img/Kodawari/kodawari03-back.jpg) center center / cover no-repeat;
-	@media (max-width: 1100px) {
-		background: none;
-				}
+    @media (max-width: 1100px) {
+        background: none;
+    }
 
 }
 
-.subKodawari__img{
+.subKodawari__disc3 {
+    background: url(/img/Kodawari/kodawari03-back.jpg) center center / cover no-repeat;
+
+    @media (max-width: 1100px) {
+        background: none;
+    }
+
+}
+
+.subKodawari__img {
     max-width: 450px;
     transform: translateY(84px);
 
     @media (max-width: 1000px) {
         width: 60%;
         transform: translateX(-0px);
-		margin-top: 80px;
-              }
+        margin-top: 80px;
+    }
 }
-.subKodawari__imgOdd{
+
+.subKodawari__imgOdd {
     @media (max-width: 1000px) {
         width: 70%;
         transform: translateX(-30px);
-		margin-top: 80px;
-              }
+        margin-top: 80px;
+    }
 }
-.subKodawari__imgEven{
+
+.subKodawari__imgEven {
     @media (max-width: 1000px) {
         width: 70%;
         transform: translateX(40px);
-              }
+    }
 }
 
-.subKodawari__titleBox2{
-display: flex;
-flex-direction: row-reverse;
-padding-bottom: 30px;
-border-bottom: 1px solid f.$txt-color ;
+.subKodawari__titleBox2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 30px;
+    border-bottom: 1px solid f.$txt-color;
 }
 
 
 
-.subKodawari__discTitle{
+.subKodawari__discTitle {
     font-size: 3.8rem;
     padding-bottom: 30px;
-    border-bottom: 1px solid f.$txt-color ;
+    border-bottom: 1px solid f.$txt-color;
     position: relative;
-	color: f.$txt-color;
+    color: f.$txt-color;
+
     @media (max-width: 1000px) {
         font-size: 3.2rem;
-            }
+    }
+
     @media (max-width: 600px) {
         font-size: 1.8rem;
-            }
+    }
 }
 
-.subKodawari__no{
+.subKodawari__no {
     position: absolute;
-	top: 470px;
+    top: 470px;
     left: -210px;
     display: flex;
     align-items: center;
     justify-content: center;
-	color: f.$white-color;
-  font-size: 24px;
-  width: 315px;
-  height: 157px;
-  background: url(/img/Kodawari/kodawari-title.png) center center / cover no-repeat;
-  padding-right: 75px;
+    color: f.$white-color;
+    font-size: 24px;
+    width: 315px;
+    height: 157px;
+    background: url(/img/Kodawari/kodawari-title.png) center center / cover no-repeat;
+    padding-right: 75px;
     padding-top: 24px;
-  @media (max-width: 1100px) {
-    display: none;
-            }
 
-  span{
-      display: inline-block;
-      transform: rotate(9.85deg);
-      font-size: 5rem;
-  }
-  }
+    @media (max-width: 1100px) {
+        display: none;
+    }
 
-  .subKodawari__noEven{
-	top: 470px;
-    left: 380px;
-  }
-
-.subKodawari__discText{
-    margin-top: 36px;
-    letter-spacing: 0.12em;
-	@media (max-width: 600px) {
-        margin-top: 20px;
-            }
+    span {
+        display: inline-block;
+        transform: rotate(9.85deg);
+        font-size: 5rem;
+    }
 }
 
-.subKodawari__contentsRight{
+.subKodawari__noEven {
+    top: 470px;
+    left: 380px;
+}
+
+.subKodawari__discText {
+    margin-top: 36px;
+    letter-spacing: 0.12em;
+
+    @media (max-width: 600px) {
+        margin-top: 20px;
+    }
+}
+
+.subKodawari__contentsRight {
     margin-top: 88px;
 }
 
-.subKodawari__bottomImg{
+.subKodawari__bottomImg {
     width: 100vw;
 }
 
-.subKodawari__contentsItem3{
+.subKodawari__contentsItem3 {
     position: relative;
 }
 
-.subKodawari__gold2{
+.subKodawari__gold2 {
     max-width: 470px;
     position: absolute;
     top: -50px;
     right: 0;
-    @media (max-width: 1000px) {
-     max-width: 375px;
-     top: 240px;
-     right: unset;
-     left: 50%;
-     transform: translateX(-50%);
 
-                }
+    @media (max-width: 1000px) {
+        max-width: 375px;
+        top: 240px;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
 }
 
-.subKodawari__noSp{
+.subKodawari__noSp {
     display: none;
     position: static;
     color: f.$white-color;
-margin: 0 auto 40px;
-text-align: center;
-font-size: 1.4rem;
-background: url(/img/Kodawari/kodawari-title.png) center center / cover no-repeat;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    background: url(/img/Kodawari/kodawari-title.png) center center / cover no-repeat;
+
     @media (max-width: 1100px) {
-    display: block;
-    width: 200px;
-	height: 200px;
-	background-size: contain;
-    padding-right: 47px;
-    padding-top: 78px;
-position: absolute;
-z-index: 3;
-left: 344px;
-top: -210px;
-font-size: 1.6rem;
-            }
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+        padding-right: 47px;
+        padding-top: 78px;
+        position: absolute;
+        z-index: 3;
+        left: 344px;
+        top: -210px;
+        font-size: 1.6rem;
+    }
+
     @media (max-width: 700px) {
-left: 310px;
-font-size: 1.6rem;
-            }
+        left: 310px;
+        font-size: 1.6rem;
+    }
+
     @media (max-width: 600px) {
-    display: block;
-    width: 150px;
-	height: 150px;
-	background-size: contain;
-    padding-right: 47px;
-    padding-top: 59px;
-position: absolute;
-z-index: 3;
-left: auto;
-right: 2%;
-top: -130px;
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+        padding-right: 47px;
+        padding-top: 59px;
+        position: absolute;
+        z-index: 3;
+        left: auto;
+        right: 2%;
+        top: -130px;
 
-            }
+    }
+
     @media (max-width: 400px) {
-    display: block;
-    width: 150px;
-	height: 150px;
-	background-size: contain;
-    padding-right: 47px;
-    padding-top: 59px;
-position: absolute;
-z-index: 3;
-left: auto;
-right: -4px;
-top: -130px;
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+        padding-right: 47px;
+        padding-top: 59px;
+        position: absolute;
+        z-index: 3;
+        left: auto;
+        right: -4px;
+        top: -130px;
 
-            }
-			span{
-				font-size: 2.2rem;
-			}
+    }
+
+    span {
+        font-size: 2.2rem;
+    }
 }
 
-.subKodawari__noEven{
-	@media (max-width: 1100px) {
-	left: -40px;
-		font-size: 1.6rem;
-					}
-	@media (max-width: 600px) {
-	left: -260px;
+.subKodawari__noEven {
+    @media (max-width: 1100px) {
+        left: -40px;
+        font-size: 1.6rem;
+    }
 
-					}
-	@media (max-width: 450px) {
-	left: -150px;
-					}
+    @media (max-width: 600px) {
+        left: -260px;
+
+    }
+
+    @media (max-width: 450px) {
+        left: -150px;
+    }
 }
-.subKodawari__contentsItem{
+
+.subKodawari__contentsItem {
     position: relative;
 }
 
-.subKodawari__goldSp{
+.subKodawari__goldSp {
     position: absolute;
     display: none;
+
     @media (max-width: 1000px) {
         display: block;
         max-width: 375px;
@@ -342,12 +373,13 @@ top: -130px;
         left: 50%;
         transform: translateX(-50%);
 
-                   }
+    }
 }
 
-.subKodawari__goldSp2{
-	position: absolute;
+.subKodawari__goldSp2 {
+    position: absolute;
     display: none;
+
     @media (max-width: 600px) {
         display: block;
         max-width: 375px;
@@ -356,10 +388,10 @@ top: -130px;
         left: 50%;
         transform: translateX(-50%);
 
-                   }
+    }
 }
 
-.subHeader__headerWrapper{
-	margin-right: 0;
+.subHeader__headerWrapper {
+    margin-right: 0;
 
 }

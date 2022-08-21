@@ -1,175 +1,197 @@
 //store.scss
-@use "../../global/import" as f;
+@use "../../global/import"as f;
 
 
 
-.access__inner{
+.access__inner {
     padding: 88px 0;
 
-  }
+}
 
-  .access__photoWrapper{
+.access__photoWrapper {
     background: url(/img/about/access-back.jpg) center center / cover no-repeat;
+
     @media screen and (max-width: 1000px) {
         background: url(/img/about/access-back-sp.jpg) center center / cover no-repeat;
-                                }
-  }
+    }
+}
 
-.access__imgBox{
+.access__imgBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
     margin-top: 110px;
+
     @media screen and (max-width: 600px) {
         gap: 16px;
         max-width: 350px;
         margin: 0 auto;
-                                }
-    img{
+    }
+
+    img {
         max-width: 380px;
+
         @media screen and (max-width: 600px) {
-          max-width: 155px;
-                                  }
+            max-width: 155px;
+        }
     }
 }
 
-.access__goldBox{
+.access__goldBox {
     position: absolute;
     top: 0;
     left: 0;
     max-width: 410px;
+
     @media screen and (max-width: 600px) {
         max-width: 200px;
-                                }
+    }
 }
 
 
-.access__contents{
+.access__contents {
     position: relative;
     z-index: -5;
-	background: url(/img/about/access-back.jpg) center center / cover no-repeat;
-padding: 54px 0x 80px;
-address{
-    color: f.$white-color;
+    background: url(/img/about/access-back.jpg) center center / cover no-repeat;
+    padding: 54px 0x 80px;
 
-    margin: 0 auto;
-    ul{
-        max-width: 900px;
+    address {
+        color: f.$white-color;
+
         margin: 0 auto;
-        margin-top: 72px;
-        column-gap: 110px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        @media screen and (max-width: 1000px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            margin-top: 50px;
-                                 }
-        dl{
-            font-style: normal;
-            font-size: 2rem;
-            display: flex;
-            column-gap: 120px;
-            border-bottom: 1px solid f.$white-color;
-            padding: 20px 48px;
-            @media screen and (max-width: 600px) {
-               flex-direction: column;
-               align-items: center;
-               row-gap: 20px;
-               font-size: 1.8rem;
 
-                                     }
-            dt{
-                width: 82px;
-              display: flex;
-              justify-content: space-between;
+        ul {
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: 72px;
+            column-gap: 110px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            @media screen and (max-width: 1000px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                margin-top: 50px;
             }
-            dd{
-                flex: 1;
-                font-size: 2.6rem;
+
+            dl {
+                font-style: normal;
+                font-size: 2rem;
+                display: flex;
+                column-gap: 120px;
+                border-bottom: 1px solid f.$white-color;
+                padding: 20px 48px;
+
                 @media screen and (max-width: 600px) {
-                    font-size: 1.6rem;
-                    text-align: center;
-                                          }
-                                          span{
-                                            @media screen and (max-width: 600px) {
-                                              display: none;
-                                                                      }
-                                          }
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 20px;
+                    font-size: 1.8rem;
+
+                }
+
+                dt {
+                    width: 82px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                dd {
+                    flex: 1;
+                    font-size: 2.6rem;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 1.6rem;
+                        text-align: center;
+                    }
+
+                    span {
+                        @media screen and (max-width: 600px) {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
 }
-}
 
-.access__goldTop{
+.access__goldTop {
     position: absolute;
     top: 0;
     left: 0;
     max-width: 410px;
     z-index: -1;
+
     @media screen and (max-width: 600px) {
         max-width: 200px;
-                                }
+    }
 }
 
-.access__title{
+.access__title {
     text-align: center;
     color: f.$txt-color;
+
     @media screen and (max-width: 600px) {
-      display: none;
-                              }
+        display: none;
+    }
 }
 
-.access__titleSp{
-  display: none;
+.access__titleSp {
+    display: none;
+
     @media screen and (max-width: 600px) {
-      display: block;
-      width:155px;
-      height: 100px;
-      font-size: 24px;
-      display: flex;
-    align-items: center;
+        display: block;
+        width: 155px;
+        height: 100px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
 }
-                              }
 
 
-.access__address{
+.access__address {
     padding: 88px 20px 88px;
     background-color: f.$txt-color;
     color: f.$white-color;
+
     @media screen and (max-width: 1000px) {
         padding: 72px 20px 88px;
-                                }
-    h3{
+    }
+
+    h3 {
         color: f.$white-color;
         font-style: normal;
         text-align: center;
     }
 }
 
-.access__map{
+.access__map {
     max-width: 1200px;
     margin: 0 auto;
-    iframe{
+
+    iframe {
         width: 100%;
         margin-top: 60px;
         margin-bottom: 60px;
     }
 }
 
-.access__googleMap{
+.access__googleMap {
     width: 100%;
+
     @media screen and (max-width: 600px) {
-display: none;
-  }
+        display: none;
+    }
 }
 
-.access__googleMapSp{
+.access__googleMapSp {
     display: none;
     width: 100%;
+
     @media screen and (max-width: 600px) {
-display: block;
-  }
+        display: block;
+    }
 }
