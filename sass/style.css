@@ -775,11 +775,12 @@ footer {
   transform: rotate(90deg);
   position: absolute;
   bottom: 180px;
-  right: 10%;
+  right: 5%;
 }
 @media screen and (max-width: 600px) {
   .fv__scroll {
     bottom: 120px;
+    display: none;
   }
 }
 .fv__scroll div {
@@ -811,6 +812,68 @@ footer {
 }
 @media screen and (max-width: 600px) {
   .fv__scroll div::after {
+    width: 90px;
+  }
+}
+@keyframes pathmove {
+  0% {
+    width: 0;
+    right: -20px;
+    opacity: 0;
+  }
+  70% {
+    width: 60px;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    right: -150px;
+    opacity: 0;
+  }
+}
+
+.fv__scrollSp {
+  display: none;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 180px;
+  right: 1%;
+}
+@media screen and (max-width: 600px) {
+  .fv__scrollSp {
+    bottom: 120px;
+    display: block;
+  }
+}
+.fv__scrollSp div {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  display: block;
+  position: relative;
+  font-size: 3rem;
+  /*高さ・位置・透過が変化して線が上から下に動く*/
+}
+@media screen and (max-width: 600px) {
+  .fv__scrollSp div {
+    font-size: 1.4rem;
+  }
+}
+.fv__scrollSp div::after {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  background-color: #fff;
+  content: "";
+  width: 110px;
+  height: 1px;
+  content: "";
+  transform: rotate(180deg);
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.8s ease-in-out infinite;
+  opacity: 0;
+}
+@media screen and (max-width: 600px) {
+  .fv__scrollSp div::after {
     width: 90px;
   }
 }
