@@ -1278,6 +1278,15 @@ picture img {
   padding-bottom: 90px;
 }
 
+.kodawari__disc1 {
+  transform: translateX(80px);
+}
+@media (max-width: 1000px) {
+  .kodawari__disc1 {
+    transform: translateX(0);
+  }
+}
+
 .kodawari__contents1LeftImg {
   max-width: 675px;
   transform: translateX(-100px);

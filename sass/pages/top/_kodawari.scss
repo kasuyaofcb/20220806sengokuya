@@ -100,6 +100,12 @@
 .kodawari__disc1 {
     padding-bottom: 90px;
 }
+.kodawari__disc1 {
+    transform: translateX(80px);
+    @media (max-width: 1000px) {
+        transform: translateX(0);
+    }
+}
 
 .kodawari__contents1LeftImg {
     max-width: 675px;
