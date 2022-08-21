@@ -385,6 +385,10 @@ a {
   display: inline-block;
   border-radius: 54px;
 }
+.contact-btn:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
 .contact-btn span img {
   width: 28px;
   transform: translate(10px, -11px);
@@ -480,7 +484,8 @@ footer {
 
 .subHeader__headerLogoBox {
   display: flex;
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   align-items: center;
 }
 
@@ -800,12 +805,29 @@ footer {
   content: "";
   transform: rotate(180deg);
   /*線の動き1.4秒かけて動く。永遠にループ*/
-  animation: pathmove 1.8s ease-in-out infinite;
+  -webkit-animation: pathmove 1.8s ease-in-out infinite;
+          animation: pathmove 1.8s ease-in-out infinite;
   opacity: 0;
 }
 @media screen and (max-width: 600px) {
   .fv__scroll div::after {
     width: 90px;
+  }
+}
+@-webkit-keyframes pathmove {
+  0% {
+    width: 0;
+    right: -20px;
+    opacity: 0;
+  }
+  70% {
+    width: 60px;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    right: -150px;
+    opacity: 0;
   }
 }
 @keyframes pathmove {
@@ -943,7 +965,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   padding-bottom: 15px;
 }
 @media screen and (max-width: 600px) {
@@ -1019,7 +1042,8 @@ footer {
 
 .about__contentsBox {
   display: flex;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   margin-top: 96px;
 }
 @media screen and (max-width: 1000px) {
@@ -1433,7 +1457,8 @@ picture img {
 @media screen and (max-width: 600px) {
   .product__contentsTopImg {
     width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     max-width: unset;
   }
 }
@@ -1523,7 +1548,8 @@ picture img {
 .store__contents address ul {
   margin-top: 72px;
   display: grid;
-  column-gap: 110px;
+  -moz-column-gap: 110px;
+       column-gap: 110px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -1538,7 +1564,8 @@ picture img {
   font-style: normal;
   font-size: 1.8rem;
   display: flex;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   border-bottom: 1px solid #fff;
   padding: 20px 24px;
 }
@@ -1574,7 +1601,8 @@ picture img {
 
 .aboutFv__headerLogoBox {
   display: flex;
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   align-items: center;
 }
 
@@ -1803,7 +1831,8 @@ picture img {
 .hisotry__contentsBox {
   align-items: center;
   max-width: 1200px;
-  column-gap: 48px;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
   margin-bottom: 150px;
 }
 @media screen and (max-width: 1000px) {
@@ -1902,7 +1931,8 @@ picture img {
 
 .greeting__mediaBox {
   display: flex;
-  column-gap: 80px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
   margin-top: 54px;
   margin-bottom: 80px;
 }
@@ -1981,7 +2011,8 @@ picture img {
   max-width: 900px;
   margin: 0 auto;
   margin-top: 72px;
-  column-gap: 110px;
+  -moz-column-gap: 110px;
+       column-gap: 110px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -1996,7 +2027,8 @@ picture img {
   font-style: normal;
   font-size: 2rem;
   display: flex;
-  column-gap: 120px;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
   border-bottom: 1px solid #fff;
   padding: 20px 48px;
 }
@@ -2112,7 +2144,8 @@ picture img {
 }
 
 .kodawariFv__main {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   position: relative;
 }
@@ -2323,7 +2356,8 @@ picture img {
 
 .subKodawari__contentsItem {
   display: flex;
-  column-gap: 45px;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
   align-items: flex-end;
   padding-bottom: 230px;
 }
@@ -2478,7 +2512,7 @@ picture img {
 .subKodawari__no {
   position: absolute;
   top: 470px;
-  left: -260px;
+  left: -210px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2691,7 +2725,8 @@ picture img {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   margin-top: 72px;
 }
 @media (max-width: 700px) {
@@ -2747,5 +2782,4 @@ picture img {
 .contact__btn {
   margin: 0;
 }
-
 /*# sourceMappingURL=style.css.map */

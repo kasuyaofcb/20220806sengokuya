@@ -118,6 +118,10 @@ background-color: #000000;
 		background: f.$white-color;
 		display: inline-block;
 		border-radius: 54px;
+		&:hover{
+			opacity: 0.7;
+			transition: opacity 0.3s;
+		}
 		span{
 			img{
 width:28px;
