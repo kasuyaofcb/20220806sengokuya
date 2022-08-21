@@ -484,8 +484,7 @@ footer {
 
 .subHeader__headerLogoBox {
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   align-items: center;
 }
 
@@ -681,8 +680,9 @@ footer {
 
 .fv {
   background: url(/img/main-pc.jpg) center center/cover no-repeat fixed;
-  width: 100%;
+  width: 100vw;
   height: 814px;
+  background-size: cover;
   position: relative;
   color: #fff;
 }
@@ -805,29 +805,12 @@ footer {
   content: "";
   transform: rotate(180deg);
   /*線の動き1.4秒かけて動く。永遠にループ*/
-  -webkit-animation: pathmove 1.8s ease-in-out infinite;
-          animation: pathmove 1.8s ease-in-out infinite;
+  animation: pathmove 1.8s ease-in-out infinite;
   opacity: 0;
 }
 @media screen and (max-width: 600px) {
   .fv__scroll div::after {
     width: 90px;
-  }
-}
-@-webkit-keyframes pathmove {
-  0% {
-    width: 0;
-    right: -20px;
-    opacity: 0;
-  }
-  70% {
-    width: 60px;
-    opacity: 1;
-  }
-  100% {
-    width: 0;
-    right: -150px;
-    opacity: 0;
   }
 }
 @keyframes pathmove {
@@ -965,8 +948,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   padding-bottom: 15px;
 }
 @media screen and (max-width: 600px) {
@@ -1042,8 +1024,7 @@ footer {
 
 .about__contentsBox {
   display: flex;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  column-gap: 100px;
   margin-top: 96px;
 }
 @media screen and (max-width: 1000px) {
@@ -1457,8 +1438,7 @@ picture img {
 @media screen and (max-width: 600px) {
   .product__contentsTopImg {
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     max-width: unset;
   }
 }
@@ -1548,8 +1528,7 @@ picture img {
 .store__contents address ul {
   margin-top: 72px;
   display: grid;
-  -moz-column-gap: 110px;
-       column-gap: 110px;
+  column-gap: 110px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -1564,8 +1543,7 @@ picture img {
   font-style: normal;
   font-size: 1.8rem;
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   border-bottom: 1px solid #fff;
   padding: 20px 24px;
 }
@@ -1601,8 +1579,7 @@ picture img {
 
 .aboutFv__headerLogoBox {
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   align-items: center;
 }
 
@@ -1831,8 +1808,7 @@ picture img {
 .hisotry__contentsBox {
   align-items: center;
   max-width: 1200px;
-  -moz-column-gap: 48px;
-       column-gap: 48px;
+  column-gap: 48px;
   margin-bottom: 150px;
 }
 @media screen and (max-width: 1000px) {
@@ -1931,8 +1907,7 @@ picture img {
 
 .greeting__mediaBox {
   display: flex;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  column-gap: 80px;
   margin-top: 54px;
   margin-bottom: 80px;
 }
@@ -2011,8 +1986,7 @@ picture img {
   max-width: 900px;
   margin: 0 auto;
   margin-top: 72px;
-  -moz-column-gap: 110px;
-       column-gap: 110px;
+  column-gap: 110px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -2027,8 +2001,7 @@ picture img {
   font-style: normal;
   font-size: 2rem;
   display: flex;
-  -moz-column-gap: 120px;
-       column-gap: 120px;
+  column-gap: 120px;
   border-bottom: 1px solid #fff;
   padding: 20px 48px;
 }
@@ -2144,8 +2117,7 @@ picture img {
 }
 
 .kodawariFv__main {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-size: cover;
   position: relative;
 }
@@ -2356,8 +2328,7 @@ picture img {
 
 .subKodawari__contentsItem {
   display: flex;
-  -moz-column-gap: 45px;
-       column-gap: 45px;
+  column-gap: 45px;
   align-items: flex-end;
   padding-bottom: 230px;
 }
@@ -2725,8 +2696,7 @@ picture img {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   margin-top: 72px;
 }
 @media (max-width: 700px) {
@@ -2782,4 +2752,5 @@ picture img {
 .contact__btn {
   margin: 0;
 }
+
 /*# sourceMappingURL=style.css.map */

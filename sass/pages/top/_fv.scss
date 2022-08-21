@@ -3,8 +3,9 @@
 
 .fv {
 		background: url(/img/main-pc.jpg) center center / cover no-repeat fixed;
-	width: 100%;
-	height: 814px;
+		width: 100vw;
+		height: 814px;
+		background-size: cover;
 position: relative;
 color: f.$white-color;
 @media screen and (max-width: 600px) {
