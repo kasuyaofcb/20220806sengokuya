@@ -3,4 +3,4 @@ _gulp/
 _static/src/
 
 *
-!/dist/
+!/_static/dist/
