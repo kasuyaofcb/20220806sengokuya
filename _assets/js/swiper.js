@@ -5,7 +5,6 @@
     spaceBetween: 10,
     slidesPerView: 'auto',
     loop: true,
-    freeMode: true,
     watchSlidesProgress: true,
   });
 
