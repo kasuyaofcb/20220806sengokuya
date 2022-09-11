@@ -1,8 +1,0 @@
-@use '../../mixin/mixin' as f;
-@use '../../setting/setting' as f;
-
-.news {
-  h1 {
-    color: $color_accent;
-  }
-}
