@@ -1,0 +1,21 @@
+/* -----------------------------------------------
+* Page エントリーポイント
+-------------------------------------------------- */
+@use './home/fv';
+@use './home/news';
+@use './home/about';
+@use './home/kodawari';
+@use './home/product';
+@use './home/store';
+
+
+@use './about/aboutFv';
+@use './about/history';
+@use './about/greeting';
+@use './about/access';
+
+
+@use './kodawari/kodawariFv';
+@use './kodawari/merit';
+@use './kodawari/subKodawari';
+@use './kodawari/contact';

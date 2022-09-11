@@ -1,0 +1,82 @@
+//common.scss
+@use '../setting/setting' as f;
+
+
+footer {
+    background: url(../img/footer-bg.png) center center / cover no-repeat;
+    text-align: center;
+    padding: 32px 0 0;
+}
+
+.footer__logoBox {
+    img {
+        max-width: 142px;
+    }
+
+    p {
+        font-size: 50px;
+        color: #000000;
+    }
+
+}
+
+.footer__instaBox {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+        width: 20px;
+    }
+
+    p {
+        font-size: 2.2rem;
+    }
+}
+
+.footer__btnBox {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 64px;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        gap: unset;
+        row-gap: 24px;
+    }
+}
+
+.footer__btn {
+    width: 364px;
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        text-align: center;
+    }
+
+    span {
+        margin-left: 30px;
+        display: inline-block;
+        width: 25px;
+
+        @media screen and (max-width: 600px) {
+            margin-left: 15px;
+        }
+    }
+
+}
+
+.footer__copyright {
+    background-color: f.$txt-color;
+    color: f.$white-color;
+    text-align: center;
+    font-size: 15px;
+    line-height: 3;
+    margin-top: 54px;
+}
+
+.footer__iconFurusato {
+    transform: translate(0px, -6px);
+}

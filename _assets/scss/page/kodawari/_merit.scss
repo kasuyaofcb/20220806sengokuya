@@ -1,0 +1,159 @@
+//fv.scss
+@use '../../setting/setting' as f;
+
+.merit {
+    background-color: f.$txt-color;
+    position: relative;
+}
+
+.merit__inner {
+    color: f.$white-color;
+    padding: 140px 32px;
+position: relative;
+    @media screen and (max-width: 600px) {
+        padding: 54px 20px 80px;
+        position: relative;
+        overflow-y: hidden;
+    }
+}
+
+.merit__goldBox1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 410px;
+
+    @media screen and (max-width: 600px) {
+        max-width: 200px;
+    }
+}
+
+.merit__goldTop {
+    width: 100%;
+}
+
+.merit__goldTopSp {
+    width: 100%;
+}
+
+.merit__title {
+    color: f.$white-color;
+    text-align: center;
+
+    @media (max-width: 600px) {
+
+        font-size: 2rem;
+    }
+}
+
+.merit__contentsBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 170px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1175px) {
+        justify-content: center;
+        gap: 64px;
+
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-top: 60px;
+        gap: 64px;
+
+    }
+
+    li {
+        max-width: 360px;
+        text-align: center;
+    }
+}
+
+.merit__itemTitle {
+    text-align: center;
+    width: 300px;
+    position: relative;
+    border: solid 5px f.$white-color;
+    background-color: f.$txt-color;
+    font-size: 3.8rem;
+    padding: 50px 0;
+    margin: 0 auto 54px;
+
+    @media (max-width: 600px) {
+        padding: 30px 0;
+        width: 150px;
+        font-size: 2rem;
+        border: solid 3px f.$white-color;
+        margin: 0 auto 35px;
+    }
+}
+
+.merit__itemTitle::before,
+.merit__itemTitle::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: f.$txt-color;
+}
+
+.merit__itemTitle::before {
+    top: -6px;
+    bottom: -6px;
+    left: 15px;
+    right: 15px;
+}
+
+.merit__itemTitle::after {
+    top: 15px;
+    bottom: 15px;
+    left: -6px;
+    right: -6px;
+}
+
+.merit__itemTitle span {
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.merit__itemIcon {
+    width: 100px;
+}
+
+.merit__itemText {
+    margin-top: 72px;
+    text-align: left;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 40px;
+
+    }
+}
+
+.merit__goldTopSp2 {
+    display: none;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 100%;
+    opacity: 0.8;
+
+    @media screen and (max-width: 600px) {
+        display: block;
+
+    }
+}
+
+.merit__goldBottomSp{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+	opacity: 0.7;
+	@media screen and (max-width: 600px) {
+        display: block;
+
+    }
+}

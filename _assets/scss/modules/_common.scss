@@ -1,0 +1,143 @@
+//common.scss
+@use '../setting/setting' as f;
+
+body {
+    font-family: f.$basic;
+    color: f.$txt-color;
+    font-feature-settings: "palt";
+    background-color: f.$white-color;
+    letter-spacing: 0.05em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ここから共通部分============================== */
+
+/* h1タイトル部分 */
+
+h1 {
+    font-size: 4.6rem;
+    color: f.$white_color;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+
+/* h2タイトル部分 */
+
+h2 {
+    font-size: clamp(3.2rem, 4.5rem, 4.5rem);
+    color: f.$txt-color;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+
+    @media (max-width: 600px) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 3.5rem;
+    color: f.$txt-color;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media (max-width: 600px) {
+        font-size: 3.0rem;
+    }
+}
+
+p,
+button,
+a {
+    font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+    font-size: 2rem;
+
+    @media screen and (max-width: 600px) {
+        font-size: 1.6rem;
+    }
+}
+
+.innerWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.br__sp {
+    display: none;
+
+    @media screen and (max-width: 450px) {
+        display: block;
+    }
+}
+
+.br__pc {
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
+}
+
+.btn {
+    display: inline-block;
+
+    font-size: 2rem;
+    padding: 20px 60px;
+    border: 1px solid #000000;
+    color: #000000;
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+        font-size: 1.6rem;
+        padding: 20px 30px;
+    }
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    &:hover::after {
+        transform: translate(15px);
+        transition: transform 0.3s;
+    }
+}
+
+.contact-btn {
+
+    margin-top: 25px;
+    padding: 15px 64px;
+    font-size: 2.4rem;
+    color: f.$txt-color;
+    background: f.$white-color;
+    display: inline-block;
+    border-radius: 54px;
+
+    &:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s;
+    }
+
+    span {
+        img {
+            width: 28px;
+            transform: translate(10px, -11px);
+        }
+    }
+
+}
+
+/* ここまで共通部分============================== */
