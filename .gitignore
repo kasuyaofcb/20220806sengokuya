@@ -2,5 +2,5 @@ _assets/
 _gulp/
 _static/src/
 
-*
-!/_static/dist/
+
+!/_static/dist/*
