@@ -66,6 +66,10 @@ a {
         font-size: 1.6rem;
     }
 }
+a:hover{
+        opacity: 0.7;
+        transition: opacity 0.3s ease 0s;
+}
 
 .innerWrapper {
     max-width: 1200px;

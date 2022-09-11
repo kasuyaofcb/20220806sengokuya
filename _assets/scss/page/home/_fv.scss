@@ -22,9 +22,7 @@
     gap: 35px;
     margin-right: 40px;
 
-    @media screen and (max-width: 600px) {
-        margin-right: 20px;
-    }
+
 
     ul {
         @media screen and (max-width: 1000px) {
@@ -255,7 +253,7 @@
 
 
 .fv__spMenu {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     top: 0;
     bottom: 0;
@@ -263,10 +261,10 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 36px 20px;
     background-color: f.$txt-color;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     transform: translateX(100%);
     transition: transform 0.3s;
 
@@ -282,6 +280,7 @@
                 width: 100%;
                 display: block;
                 padding: 20px 0;
+                line-height: 1.5;
             }
         }
     }

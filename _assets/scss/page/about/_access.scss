@@ -52,7 +52,7 @@
 
 .access__contents {
     position: relative;
-    z-index: -5;
+    // z-index: -5;
     background: url(../img/about/access-back.jpg) center center / cover no-repeat;
     padding: 54px 0x 80px;
 
@@ -161,7 +161,7 @@
         padding: 72px 20px 88px;
     }
 
-    h3 {
+    h2 {
         color: f.$white-color;
         font-style: normal;
         text-align: center;
