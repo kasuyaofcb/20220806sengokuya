@@ -285,7 +285,7 @@ h1 span::after {
 }
 
 body {
-  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
+  font-family: "YuMincho", "Yu Mincho", "Yu Mincho Light", "游明朝体", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
   color: #000000;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
@@ -395,6 +395,10 @@ a:hover {
   width: 28px;
   -webkit-transform: translate(10px, -11px);
           transform: translate(10px, -11px);
+}
+
+main {
+  overflow-x: hidden;
 }
 
 /* ここまで共通部分============================== */
@@ -685,8 +689,8 @@ footer {
 }
 
 .fv__spMenu {
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 3;
   top: 0;
   bottom: 0;
   right: 0;
@@ -818,6 +822,7 @@ footer {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  overflow-y: scroll;
 }
 
 .news__inner {
@@ -1321,6 +1326,7 @@ picture img {
 .aboutFv__main {
   position: relative;
 }
+
 .aboutFv__mainDeco {
   background-color: #fff;
   position: absolute;
@@ -2496,10 +2502,11 @@ picture img {
             transform: translate(0px, -50px);
   }
   .subKodawari__disc {
-    padding: 40px 20px 0;
+    padding: 40px 20px 0 !important;
   }
   .subKodawari__discTitle {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
+    padding-bottom: 16px;
   }
   .subKodawari__discText {
     margin-top: 20px;
@@ -2562,6 +2569,9 @@ a {
   .fv {
     background: url(../img/home/main-sp.png) center center/cover no-repeat;
     height: 650px;
+  }
+  .fv__header {
+    margin-right: 20px;
   }
   .fv__logoBox {
     max-width: 380px;
@@ -2710,6 +2720,9 @@ a {
   .subHeader__logoTitle {
     display: none;
   }
+  .subHeader__headerWrapper {
+    margin-right: 0;
+  }
   .subHeader__mainLeftTopW {
     -webkit-transform: translate(-132px, -35.65px);
             transform: translate(-132px, -35.65px);
@@ -2773,6 +2786,7 @@ a {
   }
   .history__contentsTitle {
     font-size: 2rem;
+    padding: 32px 20px 0;
   }
   .history__contentsText {
     margin-top: 24px;
@@ -3347,12 +3361,12 @@ a {
 
 @media (max-width: 700px) {
   .subKodawari__noSp {
-    left: 310px;
+    left: 350px;
     font-size: 1.6rem;
     width: 150px;
   }
   .subKodawari__noEven {
-    left: -40px;
+    left: 0px;
     font-size: 1.6rem;
     width: 150px;
     margin: 0;
@@ -3390,34 +3404,44 @@ a {
     left: 270px;
   }
   .subKodawari__noEven {
-    left: -30px;
+    left: 0px;
   }
 }
 
 @media (max-width: 490px) {
   .subKodawari__noSp {
-    left: 190px;
+    left: 250px;
   }
   .subKodawari__noEven {
-    left: -30px;
+    left: 0px;
   }
 }
 
 @media (max-width: 450px) {
   .subKodawari__noSp {
-    left: 150px;
+    left: 230px;
   }
   .subKodawari__noEven {
-    left: -40px;
+    left: 0px;
   }
 }
 
 @media (max-width: 400px) {
   .subKodawari__noSp {
-    left: 120px;
+    left: 200px;
+    top: -190px;
   }
   .subKodawari__noEven {
-    left: -40px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .subKodawari__noSp {
+    left: 165px;
+  }
+  .subKodawari__noEven {
+    left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

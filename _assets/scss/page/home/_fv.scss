@@ -21,7 +21,9 @@
     align-items: center;
     gap: 35px;
     margin-right: 40px;
-
+    @media screen and (max-width: 600px) {
+        margin-right: 20px;
+    }
 
 
     ul {
@@ -253,8 +255,8 @@
 
 
 .fv__spMenu {
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 3;
     top: 0;
     bottom: 0;
     right: 0;
@@ -369,5 +371,6 @@
     .fv__spMenu {
         transform: translateX(0%);
         transition: transform 0.3s;
+        overflow-y: scroll;
     }
 }
