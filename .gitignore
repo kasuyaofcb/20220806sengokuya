@@ -1,6 +1,6 @@
 _assets/
 _gulp/
-_static/
+_static/src
 
 !/_static/dist/about/
 !/_static/dist/css/
