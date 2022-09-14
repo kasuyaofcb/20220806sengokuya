@@ -2641,12 +2641,10 @@ a {
   }
   .product__contentsBtn {
     width: 80%;
-    text-align: center;
-    margin-left: unset;
-    margin: 50px auto 0;
   }
   .store__bg {
-    height: 250px;
+    height: 370px;
+    background: url(../img/about/access-sp.jpg) center center/cover no-repeat;
   }
   .store__contents address ul dl {
     -webkit-box-orient: vertical;
@@ -3019,10 +3017,10 @@ a {
     max-width: 80%;
   }
   .product__contentsBtn {
-    margin-left: 0;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
+    margin: 50px auto 0 !important;
   }
   .store__contents address ul {
     grid-template-columns: 1fr;
@@ -3274,6 +3272,9 @@ a {
 @media screen and (max-width: 1530px) {
   .product__contentsBtn {
     margin-left: 140px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
   }
 }
 
