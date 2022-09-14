@@ -6,10 +6,11 @@
   centeredSlides: true,
 	loop: true,
 	slidesPerView: 1.25,
-	spaceBetween: 0,
+	spaceBetween: 20,
     breakpoints: {
-      600: {
-        slidesPerView: 1,
+      1025: {
+        width:1024,
+        height:768,
         slidesPerView: "auto"
       }
     },

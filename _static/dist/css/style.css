@@ -852,7 +852,7 @@ footer {
 .news__category {
   color: #fff;
   background-color: #000000;
-  padding: 8px 30px;
+  padding: 4px 30px;
 }
 
 .news__date {
@@ -1195,16 +1195,13 @@ picture img {
   cursor: pointer;
 }
 
-.swiper-wrapper {
-  gap: 20px;
-}
-
 .swiper-slide {
-  width: 455px !important;
+  max-width: 455px;
   height: 100%;
 }
 .swiper-slide img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .store__bg {
@@ -1630,6 +1627,7 @@ picture img {
   top: 0;
   left: 0;
   max-width: 410px;
+  z-index: -1;
 }
 
 .history__goldTop {
@@ -1725,6 +1723,8 @@ picture img {
           justify-content: center;
   gap: 16px;
   margin-top: 110px;
+  position: relative;
+  z-index: 2;
 }
 .access__imgBox img {
   max-width: 380px;
@@ -1735,6 +1735,7 @@ picture img {
   top: 0;
   left: 0;
   max-width: 410px;
+  z-index: 1;
 }
 
 .access__contents {
@@ -3021,6 +3022,7 @@ a {
         -ms-flex-item-align: center;
             align-self: center;
     margin: 50px auto 0 !important;
+    text-align: center;
   }
   .store__contents address ul {
     grid-template-columns: 1fr;
