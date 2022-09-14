@@ -1,4 +1,12 @@
 _assets/
 _gulp/
 _static/
-!/_static/dist/
+
+!/_static/dist/about/
+!/_static/dist/css/
+!/_static/dist/font/
+!/_static/dist/img/
+!/_static/dist/js/
+!/_static/dist/kodawari/
+!/_static/dist/hoge.php
+!/_static/dist/index.html
