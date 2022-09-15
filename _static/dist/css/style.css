@@ -2496,6 +2496,9 @@ picture img {
     border: solid 3px #fff;
     margin: 0 auto 35px;
   }
+  .subKodawari__contentsBox {
+    row-gap: 100px;
+  }
   .subKodawari__backImg {
     display: block;
     width: 100%;
