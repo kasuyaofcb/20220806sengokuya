@@ -2447,6 +2447,59 @@ picture img {
   margin: 0;
 }
 
+.productFv__h1 {
+  font-weight: normal;
+}
+
+.poductJoubiKisho {
+  background-image: url(/img/product/item-back.jpg);
+  padding: 100px;
+}
+
+.poductJoubiKisho__inner {
+  padding: 100px 32px;
+}
+
+.poductJoubiKisho__titleBox {
+  position: relative;
+}
+.poductJoubiKisho__titleBox svg {
+  width: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.poductJoubiKisho__title {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+.poductJoubiKisho__title::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+}
+.poductJoubiKisho__title::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+}
+
 /* -----------------------------------------------
 * Page エントリーポイント
 -------------------------------------------------- */
