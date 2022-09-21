@@ -1,191 +1,308 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<title>肉の千石屋</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="" />
-	<title>肉の千石屋</title>
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;700&display=swap"
-		rel="stylesheet">
-</head>
+	<body>
+		<!-- ここからメインコンテンツ部分============================== -->
+		<main>
+			<!-- ここからファーストビュー部分============================== -->
+			<section class="subHeaderWrapper">
+				<header class="subHeader">
+					<a href="/" class="subHeader__headerLogoBox">
+						<img
+							src="../img/home/foot-logo.png"
+							alt="ヘッダーロゴ"
+							class="subHeader__headerLogo"
+						/>
+						<p class="subHeader__logoTitle">肉の千石屋</p>
+					</a>
 
-<body>
+					<nav class="fv__nav subHeader__nav">
+						<div class="fv__header subHeader__headerWrapper">
+							<ul>
+								<li class="fv__navItem">
+									<a href="/about/"
+										><span class="fv__navItemText">肉の千石屋について</span></a
+									>
+								</li>
+								<li class="fv__navItem">
+									<a href="/kodawari/"
+										><span class="fv__navItemText">お肉へのこだわり</span></a
+									>
+								</li>
+								<li class="fv__navItem">
+									<a href="/product/"
+										><span class="fv__navItemText">取り扱い商品</span></a
+									>
+								</li>
+								<li class="fv__navItem">
+									<a href="#"><span class="fv__navItemText">アクセス</span></a>
+								</li>
+							</ul>
+							<a
+								href="https://www.instagram.com/_sengokuya_/"
+								class="fv__instaIconBox"
+							>
+								<svg
+									class="subHeader__spMenuIconInsta"
+									version="1.1"
+									id="レイヤー_1"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									x="0px"
+									y="0px"
+									viewBox="0 0 100 100"
+									style="enable-background: new 0 0 100 100"
+									xml:space="preserve"
+								>
+									<style type="text/css">
+										.st0 {
+											fill-rule: evenodd;
+											clip-rule: evenodd;
+										}
+									</style>
+									<g>
+										<path
+											class="st0"
+											d="M50,0.9c-13.3,0-15,0.1-20.2,0.3C24.6,1.5,21,2.3,17.9,3.5c-3.3,1.2-6.2,3.2-8.7,5.7c-2.5,2.4-4.4,5.4-5.7,8.7
+				   c-1.2,3.1-2,6.7-2.3,11.9C1.1,35,1,36.6,1,50s0.1,15,0.3,20.2c0.2,5.2,1.1,8.8,2.3,11.9c1.2,3.3,3.2,6.2,5.7,8.7
+				   c2.7,2.7,5.5,4.4,8.7,5.7c3.1,1.2,6.7,2,11.9,2.3C35.1,98.9,36.7,99,50,99s15-0.1,20.2-0.3c5.2-0.2,8.8-1.1,11.9-2.3
+				   c3.3-1.2,6.2-3.2,8.7-5.7c2.7-2.7,4.4-5.5,5.7-8.7c1.2-3.1,2-6.7,2.3-11.9c0.2-5.2,0.3-6.9,0.3-20.2S99,35,98.8,29.7
+				   c-0.2-5.2-1.1-8.8-2.3-11.9c-1.2-3.3-3.2-6.2-5.7-8.7c-2.4-2.5-5.4-4.4-8.7-5.7c-3.1-1.2-6.7-2-11.9-2.3C65,1,63.4,0.9,50,0.9z
+					M50,9.8c13.1,0,14.6,0.1,19.8,0.3c4.8,0.2,7.4,1,9.1,1.7c2.3,0.9,3.9,2,5.6,3.7c1.7,1.7,2.8,3.4,3.7,5.6c0.7,1.7,1.5,4.3,1.7,9.1
+				   c0.2,5.2,0.3,6.7,0.3,19.8S90.2,64.6,90,69.8c-0.2,4.8-1,7.4-1.7,9.1c-0.8,2.1-2,4.1-3.7,5.6c-1.7,1.7-3.4,2.8-5.6,3.7
+				   c-1.7,0.7-4.3,1.5-9.1,1.7c-5.2,0.2-6.7,0.3-19.8,0.3s-14.6-0.1-19.8-0.3c-4.8-0.2-7.4-1-9.1-1.7c-2.1-0.8-4.1-2-5.6-3.7
+				   c-1.6-1.6-2.9-3.5-3.7-5.6c-0.7-1.7-1.5-4.3-1.7-9.1C9.9,64.6,9.8,63.1,9.8,50s0.1-14.6,0.3-19.8c0.2-4.8,1-7.4,1.7-9.1
+				   c0.9-2.3,2-3.9,3.7-5.6c1.7-1.7,3.4-2.8,5.6-3.7c1.7-0.7,4.3-1.5,9.1-1.7C35.4,9.8,36.9,9.8,50,9.8z"
+										/>
+										<path
+											class="st0"
+											d="M50,66.3c-9,0-16.4-7.3-16.4-16.4S41,33.6,50,33.6c0,0,0,0,0,0c9,0,16.4,7.3,16.4,16.4
+				   C66.4,59,59.1,66.3,50,66.3z M50,24.8c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2c0,0,0,0,0,0
+				   C64,75.2,75.2,63.9,75.2,50C75.2,36,64,24.8,50,24.8z M82.6,24.3c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6S82.6,21,82.6,24.3"
+										/>
+									</g>
+								</svg>
+							</a>
+							<div class="fv__humTarget">
+								<img src="../img/about/menu-black.svg" alt="メニューバー" />
+								<p>メニュー</p>
+							</div>
+						</div>
+						<div class="fv__spMenu">
+							<div class="fv__spMenuClose">
+								<img
+									src="../img/home/menu-close.png"
+									alt="メニューバー閉じる"
+									class="fv__spMenuClose"
+								/>
+								<p>閉じる</p>
+							</div>
+							<ul class="fv__spMenuItems">
+								<li><a href="/">トップ</a></li>
+								<li><a href="/about/">肉の千石屋について</a></li>
+								<li><a href="/kodawari/">お肉へのこだわり</a></li>
+								<li><a href="/product/">取り扱い商品</a></li>
+								<li><a href="#">アクセス</a></li>
+								<li>
+									<a href="https://www.instagram.com/_sengokuya_/">
+										<div class="fv__spInstaBox">
+											<svg
+												class="fv__spMenuIconInsta"
+												version="1.1"
+												id="レイヤー_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+												x="0px"
+												y="0px"
+												viewBox="0 0 100 100"
+												style="enable-background: new 0 0 100 100"
+												xml:space="preserve"
+											>
+												<style type="text/css">
+													.st0 {
+														fill-rule: evenodd;
+														clip-rule: evenodd;
+													}
+												</style>
+												<g>
+													<path
+														class="st0"
+														d="M50,0.9c-13.3,0-15,0.1-20.2,0.3C24.6,1.5,21,2.3,17.9,3.5c-3.3,1.2-6.2,3.2-8.7,5.7c-2.5,2.4-4.4,5.4-5.7,8.7
+				   c-1.2,3.1-2,6.7-2.3,11.9C1.1,35,1,36.6,1,50s0.1,15,0.3,20.2c0.2,5.2,1.1,8.8,2.3,11.9c1.2,3.3,3.2,6.2,5.7,8.7
+				   c2.7,2.7,5.5,4.4,8.7,5.7c3.1,1.2,6.7,2,11.9,2.3C35.1,98.9,36.7,99,50,99s15-0.1,20.2-0.3c5.2-0.2,8.8-1.1,11.9-2.3
+				   c3.3-1.2,6.2-3.2,8.7-5.7c2.7-2.7,4.4-5.5,5.7-8.7c1.2-3.1,2-6.7,2.3-11.9c0.2-5.2,0.3-6.9,0.3-20.2S99,35,98.8,29.7
+				   c-0.2-5.2-1.1-8.8-2.3-11.9c-1.2-3.3-3.2-6.2-5.7-8.7c-2.4-2.5-5.4-4.4-8.7-5.7c-3.1-1.2-6.7-2-11.9-2.3C65,1,63.4,0.9,50,0.9z
+					M50,9.8c13.1,0,14.6,0.1,19.8,0.3c4.8,0.2,7.4,1,9.1,1.7c2.3,0.9,3.9,2,5.6,3.7c1.7,1.7,2.8,3.4,3.7,5.6c0.7,1.7,1.5,4.3,1.7,9.1
+				   c0.2,5.2,0.3,6.7,0.3,19.8S90.2,64.6,90,69.8c-0.2,4.8-1,7.4-1.7,9.1c-0.8,2.1-2,4.1-3.7,5.6c-1.7,1.7-3.4,2.8-5.6,3.7
+				   c-1.7,0.7-4.3,1.5-9.1,1.7c-5.2,0.2-6.7,0.3-19.8,0.3s-14.6-0.1-19.8-0.3c-4.8-0.2-7.4-1-9.1-1.7c-2.1-0.8-4.1-2-5.6-3.7
+				   c-1.6-1.6-2.9-3.5-3.7-5.6c-0.7-1.7-1.5-4.3-1.7-9.1C9.9,64.6,9.8,63.1,9.8,50s0.1-14.6,0.3-19.8c0.2-4.8,1-7.4,1.7-9.1
+				   c0.9-2.3,2-3.9,3.7-5.6c1.7-1.7,3.4-2.8,5.6-3.7c1.7-0.7,4.3-1.5,9.1-1.7C35.4,9.8,36.9,9.8,50,9.8z"
+													/>
+													<path
+														class="st0"
+														d="M50,66.3c-9,0-16.4-7.3-16.4-16.4S41,33.6,50,33.6c0,0,0,0,0,0c9,0,16.4,7.3,16.4,16.4
+				   C66.4,59,59.1,66.3,50,66.3z M50,24.8c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2c0,0,0,0,0,0
+				   C64,75.2,75.2,63.9,75.2,50C75.2,36,64,24.8,50,24.8z M82.6,24.3c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6S82.6,21,82.6,24.3"
+													/>
+												</g>
+											</svg>
+											<p>@_sengokuya_</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="btn fv__spBtn"
+								>お問い合わせ<span
+									><svg
+										class="fv__spMenuMailIcon"
+										version="1.1"
+										id="レイヤー_1"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										x="0px"
+										y="0px"
+										viewBox="0 0 100 72"
+										style="enable-background: new 0 0 100 72"
+										xml:space="preserve"
+									>
+										<g>
+											<path
+												d="M93.8,71.2H6.3c-3,0-5.4-2.4-5.4-5.4V5.9c0-3,2.4-5.4,5.4-5.4h87.5c3,0,5.4,2.4,5.4,5.4v59.9
+				   C99.2,68.8,96.8,71.2,93.8,71.2z M7.4,64.7h85.4V6.9H7.4V64.7z"
+											/>
+											<path
+												d="M50.1,47.2c-1.3,0-2.7-0.5-3.7-1.4L2.7,6.9C1.4,5.7,1.3,3.6,2.5,2.3C3.7,0.9,5.7,0.8,7.1,2l43,38.4L93.1,2
+				   c1.3-1.2,3.4-1.1,4.6,0.3c1.2,1.3,1.1,3.4-0.3,4.6L53.8,45.8C52.7,46.7,51.4,47.2,50.1,47.2z"
+											/>
+										</g></svg></span
+							></a>
 
-	<!-- ここからメインコンテンツ部分============================== -->
-	<main>
+							<ul class="fv__spMenuAddress">
+								<li>
+									<dl>
+										<dt>電話番号</dt>
+										<dd>0749-35-2981</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>営業時間</dt>
+										<dd>10:00〜18:30</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><span>定</span><span>休</span><span>日</span></dt>
+										<dd>毎週木曜日　第2水曜日</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<div class="productFv__main subHeader__main">
+					<picture>
+						<source
+							srcset="../img/product/title.jpg"
+							alt="まな板の上の霜降り肉"
+							media="(min-width: 1000px)"
+						/>
+						<!-- 幅1000px以上なら表示 -->
+						<img src="../img/product/title-sp.jpg" alt="まな板の上の霜降り肉" />
+					</picture>
 
-		<!-- ここからファーストビュー部分============================== -->
-		<section class="subHeaderWrapper">
-			<header class="subHeader">
-				<a href="/" class="subHeader__headerLogoBox">
-					<img src="../img/home/foot-logo.png" alt="ヘッダーロゴ" class="subHeader__headerLogo">
-					<p class="subHeader__logoTitle">肉の千石屋</p>
+					<div class="subHeader__mainLeftTopW subHeader__mainDeco"></div>
+					<div class="subHeader__mainLeftTopH subHeader__mainDeco"></div>
+					<div class="subHeader__mainRightTopW subHeader__mainDeco"></div>
+					<div class="subHeader__mainRightTopH subHeader__mainDeco"></div>
+					<div class="subHeader__mainLeftBottomW subHeader__mainDeco"></div>
+					<div class="subHeader__mainLeftBottomH subHeader__mainDeco"></div>
+					<div class="subHeader__mainRightBottomW subHeader__mainDeco"></div>
+					<div class="subHeader__mainRightBottomH subHeader__mainDeco"></div>
 
-				</a>
+					<h1 class="subHeader__h1 productFv__h1">取扱商品</h1>
+				</div>
+			</section>
 
-				<nav class="fv__nav subHeader__nav">
-					<div class="fv__header subHeader__headerWrapper">
-						<ul>
-							<li class="fv__navItem"><a href="/about/"><span class="fv__navItemText">肉の千石屋について</span></a></li>
-							<li class="fv__navItem"><a href="/kodawari/"><span class="fv__navItemText">お肉へのこだわり</span></a></li>
-							<li class="fv__navItem"><a href="/product/"><span class="fv__navItemText">取り扱い商品</span></a></li>
-							<li class="fv__navItem"><a href="#"><span class="fv__navItemText">アクセス</span></a></li>
-						</ul>
-						<a href="https://www.instagram.com/_sengokuya_/" class="fv__instaIconBox">
-							<svg class="subHeader__spMenuIconInsta" version="1.1" id="レイヤー_1"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-								y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
-								xml:space="preserve">
+			<section class="poductJoubiKisho">
+				<img
+					loading="lazy"
+					src="../img/product/gold02.png"
+					alt="背景金装飾1"
+					class="poductJoubiKisho__gold1 poductJoubiKisho__gold"
+				/>
+				<img
+					loading="lazy"
+					src="../img/product/gold02.png"
+					alt="背景金装飾2"
+					class="poductJoubiKisho__gold2 poductJoubiKisho__gold"
+				/>
+				<img
+					loading="lazy"
+					src="../img/product/gold02.png"
+					alt="背景金装飾3"
+					class="poductJoubiKisho__gold3 poductJoubiKisho__gold"
+				/>
+				<img
+					loading="lazy"
+					src="../img/product/gold03.png"
+					alt="背景金装飾4"
+					class="poductJoubiKisho__gold4 poductJoubiKisho__gold"
+				/>
+				<img
+					loading="lazy"
+					src="../img/product/gold01.png"
+					alt="背景金装飾5"
+					class="poductJoubiKisho__gold5 poductJoubiKisho__gold"
+				/>
+
+				<div class="poductJoubiKisho__inner">
+					<div class="poductJoubiKisho__joubiBox">
+						<div class="poductJoubiKisho__titleBox">
+							<h2 class="poductJoubiKisho__title">常備商品</h2>
+							<svg
+								version="1.1"
+								id="レイヤー_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								viewBox="0 0 200 150.291"
+								style="enable-background: new 0 0 200 150.291"
+								xml:space="preserve"
+							>
 								<style type="text/css">
 									.st0 {
-										fill-rule: evenodd;
-										clip-rule: evenodd;
+										opacity: 0.15;
+									}
+
+									.st1 {
+										fill: #ffffff;
 									}
 								</style>
-								<g>
-									<path class="st0" d="M50,0.9c-13.3,0-15,0.1-20.2,0.3C24.6,1.5,21,2.3,17.9,3.5c-3.3,1.2-6.2,3.2-8.7,5.7c-2.5,2.4-4.4,5.4-5.7,8.7
-				   c-1.2,3.1-2,6.7-2.3,11.9C1.1,35,1,36.6,1,50s0.1,15,0.3,20.2c0.2,5.2,1.1,8.8,2.3,11.9c1.2,3.3,3.2,6.2,5.7,8.7
-				   c2.7,2.7,5.5,4.4,8.7,5.7c3.1,1.2,6.7,2,11.9,2.3C35.1,98.9,36.7,99,50,99s15-0.1,20.2-0.3c5.2-0.2,8.8-1.1,11.9-2.3
-				   c3.3-1.2,6.2-3.2,8.7-5.7c2.7-2.7,4.4-5.5,5.7-8.7c1.2-3.1,2-6.7,2.3-11.9c0.2-5.2,0.3-6.9,0.3-20.2S99,35,98.8,29.7
-				   c-0.2-5.2-1.1-8.8-2.3-11.9c-1.2-3.3-3.2-6.2-5.7-8.7c-2.4-2.5-5.4-4.4-8.7-5.7c-3.1-1.2-6.7-2-11.9-2.3C65,1,63.4,0.9,50,0.9z
-					M50,9.8c13.1,0,14.6,0.1,19.8,0.3c4.8,0.2,7.4,1,9.1,1.7c2.3,0.9,3.9,2,5.6,3.7c1.7,1.7,2.8,3.4,3.7,5.6c0.7,1.7,1.5,4.3,1.7,9.1
-				   c0.2,5.2,0.3,6.7,0.3,19.8S90.2,64.6,90,69.8c-0.2,4.8-1,7.4-1.7,9.1c-0.8,2.1-2,4.1-3.7,5.6c-1.7,1.7-3.4,2.8-5.6,3.7
-				   c-1.7,0.7-4.3,1.5-9.1,1.7c-5.2,0.2-6.7,0.3-19.8,0.3s-14.6-0.1-19.8-0.3c-4.8-0.2-7.4-1-9.1-1.7c-2.1-0.8-4.1-2-5.6-3.7
-				   c-1.6-1.6-2.9-3.5-3.7-5.6c-0.7-1.7-1.5-4.3-1.7-9.1C9.9,64.6,9.8,63.1,9.8,50s0.1-14.6,0.3-19.8c0.2-4.8,1-7.4,1.7-9.1
-				   c0.9-2.3,2-3.9,3.7-5.6c1.7-1.7,3.4-2.8,5.6-3.7c1.7-0.7,4.3-1.5,9.1-1.7C35.4,9.8,36.9,9.8,50,9.8z" />
-									<path class="st0"
-										d="M50,66.3c-9,0-16.4-7.3-16.4-16.4S41,33.6,50,33.6c0,0,0,0,0,0c9,0,16.4,7.3,16.4,16.4
-				   C66.4,59,59.1,66.3,50,66.3z M50,24.8c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2c0,0,0,0,0,0
-				   C64,75.2,75.2,63.9,75.2,50C75.2,36,64,24.8,50,24.8z M82.6,24.3c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6S82.6,21,82.6,24.3" />
-								</g>
-							</svg>
-						</a>
-						<div class="fv__humTarget">
-							<img src="../img/about/menu-black.svg" alt="メニューバー">
-							<p>メニュー</p>
-						</div>
-					</div>
-					<div class="fv__spMenu">
-						<div class="fv__spMenuClose">
-							<img src="../img/home/menu-close.png" alt="メニューバー閉じる" class="fv__spMenuClose">
-							<p>閉じる</p>
-						</div>
-						<ul class="fv__spMenuItems">
-							<li><a href="/">トップ</a></li>
-							<li><a href="/about/">肉の千石屋について</a></li>
-							<li><a href="/kodawari/">お肉へのこだわり</a></li>
-							<li><a href="/product/">取り扱い商品</a></li>
-							<li><a href="#">アクセス</a></li>
-							<li><a href="https://www.instagram.com/_sengokuya_/">
-									<div class="fv__spInstaBox">
-										<svg class="fv__spMenuIconInsta" version="1.1" id="レイヤー_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
-											xml:space="preserve">
-											<style type="text/css">
-												.st0 {
-													fill-rule: evenodd;
-													clip-rule: evenodd;
-												}
-											</style>
-											<g>
-												<path class="st0" d="M50,0.9c-13.3,0-15,0.1-20.2,0.3C24.6,1.5,21,2.3,17.9,3.5c-3.3,1.2-6.2,3.2-8.7,5.7c-2.5,2.4-4.4,5.4-5.7,8.7
-				   c-1.2,3.1-2,6.7-2.3,11.9C1.1,35,1,36.6,1,50s0.1,15,0.3,20.2c0.2,5.2,1.1,8.8,2.3,11.9c1.2,3.3,3.2,6.2,5.7,8.7
-				   c2.7,2.7,5.5,4.4,8.7,5.7c3.1,1.2,6.7,2,11.9,2.3C35.1,98.9,36.7,99,50,99s15-0.1,20.2-0.3c5.2-0.2,8.8-1.1,11.9-2.3
-				   c3.3-1.2,6.2-3.2,8.7-5.7c2.7-2.7,4.4-5.5,5.7-8.7c1.2-3.1,2-6.7,2.3-11.9c0.2-5.2,0.3-6.9,0.3-20.2S99,35,98.8,29.7
-				   c-0.2-5.2-1.1-8.8-2.3-11.9c-1.2-3.3-3.2-6.2-5.7-8.7c-2.4-2.5-5.4-4.4-8.7-5.7c-3.1-1.2-6.7-2-11.9-2.3C65,1,63.4,0.9,50,0.9z
-					M50,9.8c13.1,0,14.6,0.1,19.8,0.3c4.8,0.2,7.4,1,9.1,1.7c2.3,0.9,3.9,2,5.6,3.7c1.7,1.7,2.8,3.4,3.7,5.6c0.7,1.7,1.5,4.3,1.7,9.1
-				   c0.2,5.2,0.3,6.7,0.3,19.8S90.2,64.6,90,69.8c-0.2,4.8-1,7.4-1.7,9.1c-0.8,2.1-2,4.1-3.7,5.6c-1.7,1.7-3.4,2.8-5.6,3.7
-				   c-1.7,0.7-4.3,1.5-9.1,1.7c-5.2,0.2-6.7,0.3-19.8,0.3s-14.6-0.1-19.8-0.3c-4.8-0.2-7.4-1-9.1-1.7c-2.1-0.8-4.1-2-5.6-3.7
-				   c-1.6-1.6-2.9-3.5-3.7-5.6c-0.7-1.7-1.5-4.3-1.7-9.1C9.9,64.6,9.8,63.1,9.8,50s0.1-14.6,0.3-19.8c0.2-4.8,1-7.4,1.7-9.1
-				   c0.9-2.3,2-3.9,3.7-5.6c1.7-1.7,3.4-2.8,5.6-3.7c1.7-0.7,4.3-1.5,9.1-1.7C35.4,9.8,36.9,9.8,50,9.8z" />
-												<path class="st0"
-													d="M50,66.3c-9,0-16.4-7.3-16.4-16.4S41,33.6,50,33.6c0,0,0,0,0,0c9,0,16.4,7.3,16.4,16.4
-				   C66.4,59,59.1,66.3,50,66.3z M50,24.8c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2c0,0,0,0,0,0
-				   C64,75.2,75.2,63.9,75.2,50C75.2,36,64,24.8,50,24.8z M82.6,24.3c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6S82.6,21,82.6,24.3" />
-											</g>
-										</svg>
-										<p>@_sengokuya_</p>
-									</div>
-								</a></li>
-						</ul>
-						<a href="#" class="btn fv__spBtn">お問い合わせ<span><svg class="fv__spMenuMailIcon" version="1.1"
-									id="レイヤー_1" xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 72"
-									style="enable-background:new 0 0 100 72;" xml:space="preserve">
-									<g>
-										<path d="M93.8,71.2H6.3c-3,0-5.4-2.4-5.4-5.4V5.9c0-3,2.4-5.4,5.4-5.4h87.5c3,0,5.4,2.4,5.4,5.4v59.9
-				   C99.2,68.8,96.8,71.2,93.8,71.2z M7.4,64.7h85.4V6.9H7.4V64.7z" />
-										<path d="M50.1,47.2c-1.3,0-2.7-0.5-3.7-1.4L2.7,6.9C1.4,5.7,1.3,3.6,2.5,2.3C3.7,0.9,5.7,0.8,7.1,2l43,38.4L93.1,2
-				   c1.3-1.2,3.4-1.1,4.6,0.3c1.2,1.3,1.1,3.4-0.3,4.6L53.8,45.8C52.7,46.7,51.4,47.2,50.1,47.2z" />
-									</g>
-								</svg></span></a>
-
-						<ul class="fv__spMenuAddress">
-							<li>
-								<dl>
-									<dt>電話番号</dt>
-									<dd>0749-35-2981</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>営業時間</dt>
-									<dd>10:00〜18:30</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt><span>定</span><span>休</span><span>日</span></dt>
-									<dd>毎週木曜日　第2水曜日</dd>
-								</dl>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-			<div class="productFv__main subHeader__main">
-				<picture>
-					<source srcset="../img/product/title.jpg" alt="まな板の上の霜降り肉" media="(min-width: 1000px)" />
-					<!-- 幅1000px以上なら表示 -->
-					<img src="../img/product/title_sp.png" alt="まな板の上の霜降り肉">
-				</picture>
-
-				<div class="subHeader__mainLeftTopW subHeader__mainDeco"></div>
-				<div class="subHeader__mainLeftTopH subHeader__mainDeco"></div>
-				<div class="subHeader__mainRightTopW subHeader__mainDeco"></div>
-				<div class="subHeader__mainRightTopH subHeader__mainDeco"></div>
-				<div class="subHeader__mainLeftBottomW subHeader__mainDeco"></div>
-				<div class="subHeader__mainLeftBottomH subHeader__mainDeco"></div>
-				<div class="subHeader__mainRightBottomW subHeader__mainDeco"></div>
-				<div class="subHeader__mainRightBottomH subHeader__mainDeco"></div>
-
-				<h1 class="subHeader__h1 productFv__h1">取扱商品</h1>
-			</div>
-
-		</section>
-
-		<section class="poductJoubiKisho">
-			<div class="poductJoubiKisho__inner">
-				<div class="poductJoubiKisho__titleBox">
-			<h2 class="poductJoubiKisho__title">常備商品</h2>
-			<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 200 150.291" style="enable-background:new 0 0 200 150.291;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.15;}
-	.st1{fill:#FFFFFF;}
-</style>
-<g class="st0">
-	<path class="st1" d="M198.244,97.716c0.207-4.992-0.235-10.09-0.199-15.098c0.074-10.1,0.429-20.199,0.288-30.3
+								<g class="st0">
+									<path
+										class="st1"
+										d="M198.244,97.716c0.207-4.992-0.235-10.09-0.199-15.098c0.074-10.1,0.429-20.199,0.288-30.3
 		c-0.133-9.55,1.808-20.004-5.065-27.718c-1.018-1.142-2.299-2.218-3.698-2.765c-2.746-2.513-6.301-4.028-10.082-4.23l-8.095-0.434
 		c-1.419-0.076-2.84,0.034-4.23,0.329c-8.345,1.769-39.002,8.25-42.852,8.8c-3.474,0.496-30.324-1.519-44.303-4.993
 		c-4.988-1.24-10.14-1.572-15.263-1.167c-1.368,0.108-2.724-0.008-3.864-0.534l1.614-3.459c0.255-0.546-0.222-1.15-0.812-1.028
@@ -201,66 +318,376 @@
 		c0.453-1.177,0.764-2.399,0.932-3.641c-0.146,4.395-0.419,8.793-0.675,13.052c-0.431,7.159,0.187,14.351-0.283,21.485
 		c-0.355,5.395,1.134,10.922-0.389,16.225c-1.335,4.649-3.813,8.579-0.161,13.032c0.307-0.515,0.763-0.618,1.002-1.48
 		c0.32,0.836,0.626,1.677,0.938,2.516c-0.162-2.004,0.154-4.045,0.915-5.906c0.434,2.489,0.476,5.046,0.125,7.549
-		C202.691,115.332,197.898,106.064,198.244,97.716z"/>
-</g>
-</svg>
-</div>
-</div>
-		</section>
-
-		<section class="contact">
-			<div class="contact__photoWrapper">
-				<div class="contact__inner innerWrapper">
-					<p class="contact__text">
-						卸売販売もおこなっております<br>
-						お気軽にご相談ください
-					</p>
-					<div class="contact__toContactBox">
-						<p class="contact__tel">
-							<span>
-								<img loading="lazy" class="contact__telIcon" src="../img/kodawari/tel.svg" alt="電話アイコン">
-								<img loading="lazy" class="contact__telIconSp" src="../img/kodawari/tel-b.svg" alt="電話アイコン">
-							</span>
-							0749-35-2981
-						</p>
-						<a href="#" class="contact-btn contact__btn">お問い合わせ<span><img loading="lazy" src="../img/home/mail.svg"
-									alt="メールのアイコン"></span></a>
-
+		C202.691,115.332,197.898,106.064,198.244,97.716z"
+									/>
+								</g>
+							</svg>
+						</div>
+						<ul class="poductJoubiKisho__joubiContents">
+							<li
+								class="poductJoubiKisho__joubiItem1 poductJoubiKisho__joubiItem"
+							>
+								<figure>
+									<img src="../img/product/item01.jpg" alt="カルビ（焼肉用）" />
+									<figcaption>カルビ(焼肉用)</figcaption>
+								</figure>
+							</li>
+							<li
+								class="poductJoubiKisho__joubiItem2 poductJoubiKisho__joubiItem"
+							>
+								<figure>
+									<img src="../img/product/item01.jpg" alt="カルビ（焼肉用）" />
+									<figcaption>カルビ(焼肉用)</figcaption>
+								</figure>
+							</li>
+							<li
+								class="poductJoubiKisho__joubiItem3 poductJoubiKisho__joubiItem"
+							>
+								<figure>
+									<img src="../img/product/item01.jpg" alt="カルビ（焼肉用）" />
+									<figcaption>カルビ(焼肉用)</figcaption>
+								</figure>
+							</li>
+						</ul>
 					</div>
+					<div class="poductJoubiKisho__kishoBox">
+						<div class="poductJoubiKisho__titleBox">
+							<h2 class="poductJoubiKisho__title">希少商品</h2>
+							<svg
+								version="1.1"
+								id="レイヤー_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								viewBox="0 0 200 150.291"
+								style="enable-background: new 0 0 200 150.291"
+								xml:space="preserve"
+							>
+								<style type="text/css">
+									.st0 {
+										opacity: 0.15;
+									}
 
+									.st1 {
+										fill: #ffffff;
+									}
+								</style>
+								<g class="st0">
+									<path
+										class="st1"
+										d="M198.244,97.716c0.207-4.992-0.235-10.09-0.199-15.098c0.074-10.1,0.429-20.199,0.288-30.3
+		c-0.133-9.55,1.808-20.004-5.065-27.718c-1.018-1.142-2.299-2.218-3.698-2.765c-2.746-2.513-6.301-4.028-10.082-4.23l-8.095-0.434
+		c-1.419-0.076-2.84,0.034-4.23,0.329c-8.345,1.769-39.002,8.25-42.852,8.8c-3.474,0.496-30.324-1.519-44.303-4.993
+		c-4.988-1.24-10.14-1.572-15.263-1.167c-1.368,0.108-2.724-0.008-3.864-0.534l1.614-3.459c0.255-0.546-0.222-1.15-0.812-1.028
+		l-9.408,1.937l-6.056-4.781v0c2.492-1.533,3.769-4.453,3.205-7.324L48.449,0c0,0-0.956,8.768-7.012,8.449l-8.606,0.637H22.95
+		h-3.506c0,0-3.506-0.319-4.781-7.331c-0.759-4.173-1.179-0.106-1.395,3.872c-0.171,3.154,1.787,6.034,4.784,7.033l1.711,0.57
+		l-2.55,4.781c0,0-5.737,4.144-9.244,3.506S0,21.585,0,21.585s2.231,7.583,8.925,7.583s8.925-3.506,8.925-3.506l2.267,20.736
+		l0.92,6.995c0.385,2.928,4.12,5.737,7.074,5.737h4.72c0,0,20.4,44.624,24.543,44.624s4.144,2.231,4.144,2.231l6.966,20.575
+		c0.731,1.779,1.107,3.683,1.107,5.606v8.244l-2.869,9.881h8.183l2.017-7.331l-0.637,7.331h6.908l3.016-19.604
+		c0.114-0.742,0.172-1.492,0.172-2.243v-15.128v-12.081c0-1.84,1.662-3.233,3.474-2.91c9.195,1.642,33.712,5.884,37.326,5.11
+		c3.529-0.756,17.225-7.892,22.8-10.844c1.351-0.715,3.024-0.282,3.858,0.999l13.597,20.864c2.227,3.417,3.413,7.408,3.413,11.487
+		v6.401c0,2.593-0.479,5.164-1.414,7.583l-4.005,10.365h7.969l7.65-28.687l0.352,0.775c1.843,4.054,2.352,8.587,1.454,12.949
+		l-3.081,14.964h6.694l6.381-23.494c0.416-1.53,0.48-3.134,0.189-4.693l-4.02-21.538l1.275-27.093l5.061-13.158
+		c0.453-1.177,0.764-2.399,0.932-3.641c-0.146,4.395-0.419,8.793-0.675,13.052c-0.431,7.159,0.187,14.351-0.283,21.485
+		c-0.355,5.395,1.134,10.922-0.389,16.225c-1.335,4.649-3.813,8.579-0.161,13.032c0.307-0.515,0.763-0.618,1.002-1.48
+		c0.32,0.836,0.626,1.677,0.938,2.516c-0.162-2.004,0.154-4.045,0.915-5.906c0.434,2.489,0.476,5.046,0.125,7.549
+		C202.691,115.332,197.898,106.064,198.244,97.716z"
+									/>
+								</g>
+							</svg>
+						</div>
+						<ul class="poductJoubiKisho__joubiContents">
+							<li
+								class="poductJoubiKisho__joubiItem1 poductJoubiKisho__joubiItem"
+							>
+								<figure>
+									<img src="../img/product/item03.png" alt="ミスジ" />
+									<figcaption>ミスジ</figcaption>
+								</figure>
+								<p>
+									サーロイン、ヒレ、ミスジ、イチボ、ヒウチは仕入れ状況により在庫切れになる場合がございます。<br />
+									サーロインに関しましてはステーキ用、焼肉用、すき焼き用の３つのカット方法からお選びいただけます。
+								</p>
+							</li>
+							<li
+								class="poductJoubiKisho__joubiItem2 poductJoubiKisho__joubiItem"
+							>
+								<figure>
+									<img src="../img/product/item01.jpg" alt="ヒウチ" />
+									<figcaption>ヒウチ</figcaption>
+								</figure>
+							</li>
+							<li
+								class="poductJoubiKisho__joubiItem3 poductJoubiKisho__joubiItem"
+							>
+								<figure>
+									<img src="../img/product/item01.jpg" alt="イチボ" />
+									<figcaption>イチボ</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
 				</div>
+			</section>
+
+			<section class="dailyFood">
+				<div class="dailyFood__inner">
+					<picture>
+						<source
+							srcset="../img/product/item-under.jpg"
+							alt="コロッケ"
+							media="(min-width: 1000px)"
+						/>
+						<!-- 幅1000px以上なら表示 -->
+						<img src="../img/product/item-under-sp.jpg" alt="ショーケース" />
+					</picture>
+					<div class="dailyFood__contents">
+						<h2 class="dailyFood__title">日替わりお惣菜</h2>
+						<ul class="dailyFood__contentsImgBox">
+							<li class="dailyFood__Item1 dailyFood__Item">
+								<figure>
+									<img src="../img/product/food01.png" alt="パスタ" />
+									<!-- <figcaption>商品名テキスト</figcaption> -->
+								</figure>
+							</li>
+							<li class="dailyFood__Item2 dailyFood__Item">
+								<figure>
+									<img src="../img/product/food02.png" alt="ミートボール" />
+									<!-- <figcaption>商品名テキスト</figcaption> -->
+								</figure>
+							</li>
+							<li class="dailyFood__Item3 dailyFood__Item">
+								<figure>
+									<img src="../img/product/food03.png" alt="パテ" />
+									<figcaption>商品名テキスト</figcaption>
+								</figure>
+							</li>
+							<li class="dailyFood__Item4 dailyFood__Item">
+								<figure>
+									<img src="../img/product/food04.png" alt="ベーコン巻き" />
+									<figcaption>商品名テキスト</figcaption>
+								</figure>
+							</li>
+							<li class="dailyFood__Item5 dailyFood__Item">
+								<figure>
+									<img src="../img/product/food05.png" alt="ハンバーグ" />
+									<!-- <figcaption>商品名テキスト</figcaption> -->
+								</figure>
+							</li>
+							<li class="dailyFood__Item6 dailyFood__Item">
+								<figure>
+									<img src="../img/product/food06.png" alt="おせち" />
+									<figcaption>商品名テキスト</figcaption>
+								</figure>
+							</li>
+						</ul>
+						<p class="dailyFood__bottomText">
+							日替わりお惣菜<br
+								class="br__sp"
+							/>＃千石屋母ちゃんの惣菜　やってます<br />
+							野菜は普段からお世話になっている<br />
+							農家さんが丁寧に育ててくれている自家製野菜を使用。<br />
+							インスタグラムで更新も行ってます！
+						</p>
+					</div>
+					<picture>
+						<source
+							srcset="../img/product/food-under.jpg"
+							alt="飾り肉"
+							media="(min-width: 1000px)"
+						/>
+						<!-- 幅1000px以上なら表示 -->
+						<img src="../img/product/food-under-sp.jpg" alt="飾り肉" />
+					</picture>
+				</div>
+			</section>
+
+			<section class="gift">
+				<div class="gift__inner">
+					<div class="gift__titleBox gift__titleBox--sp">
+						<h2 class="gift__title">ギフト商品</h2>
+						<img src="../img/product/noshi.svg" alt="のし" />
+					</div>
+					<picture class="gift__mainImg">
+						<source
+							srcset="../img/product/gift-main.jpg"
+							alt="ギフトメイン"
+							media="(min-width: 1000px)"
+						/>
+						<!-- 幅1000px以上なら表示 -->
+						<img src="../img/product/gift-main-sp.jpg" alt="ギフトメイン" />
+					</picture>
+					<div class="gift__contents">
+						<div class="gift__titleBox">
+							<h2 class="gift__title">ギフト商品</h2>
+							<img src="../img/product/noshi.svg" alt="のし" />
+						</div>
+						<p class="gift__topText">
+							当店ではお中元、お歳暮、結婚お祝い、内祝い、母の日や父の日等の幅広い進物用の包装や、クロネコヤマトさんでのクール便や冷凍発送での全国発送にも対応しており当店自慢のお肉を沢山の方々にお届けさせて頂いております。<br class="br__sp">包装内容は折り箱、竹の皮、インスタグラムに掲載している包装等がございます。
+						</p>
+						<ul class="gift__contentsImgBox">
+							<li>
+								<div class="gift__itemImgBox">
+									<div class="gift__itemImgShadow"></div>
+									<img
+										src="../img/product/gift01.jpg"
+										alt="ギフト1"
+										class="gift__itemImg"
+									/>
+									<div class="gift__itemNo gift__itemNo1">
+										<img src="../img/product/number-back.svg" alt="番号背景" />
+									</div>
+								</div>
+								<div class="gift__itemTextBox">
+									<div class="gift__itemNo gift__itemNo1 gift__itemNo--sp">
+										<img src="../img/product/number-back.svg" alt="番号背景" />
+									</div>
+									<p class="gift__itemText">
+										「のし」はご希望に応じて<br class="br__pc"/>
+										ご用意いたします。
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="gift__itemImgBox">
+									<div class="gift__itemImgShadow"></div>
+									<img
+										src="../img/product/gift02.jpg"
+										alt="ギフト2"
+										class="gift__itemImg"
+									/>
+									<div class="gift__itemNo gift__itemNo2">
+										<img src="../img/product/number-back.svg" alt="番号背景" />
+									</div>
+								</div>
+								<div class="gift__itemTextBox">
+									<div class="gift__itemNo gift__itemNo2 gift__itemNo--sp">
+										<img src="../img/product/number-back.svg" alt="番号背景" />
+									</div>
+									<p class="gift__itemText">
+										テキストテキストテキスト <br class="br__pc"/>
+										テキストテキスト
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="gift__itemImgBox">
+									<div class="gift__itemImgShadow"></div>
+									<img
+										src="../img/product/gift03.jpg"
+										alt="ギフト3"
+										class="gift__itemImg"
+									/>
+									<div class="gift__itemNo gift__itemNo3">
+										<img src="../img/product/number-back.svg" alt="番号背景" />
+									</div>
+								</div>
+								<div class="gift__itemTextBox">
+									<div class="gift__itemNo gift__itemNo3 gift__itemNo--sp">
+										<img src="../img/product/number-back.svg" alt="番号背景" />
+									</div>
+									<p class="gift__itemText">
+										テキストテキストテキスト <br class="br__pc"/>
+										テキストテキスト
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact">
+				<div class="contact__photoWrapper">
+					<div class="contact__inner innerWrapper">
+						<p class="contact__text">
+							卸売販売もおこなっております<br />
+							お気軽にご相談ください
+						</p>
+						<div class="contact__toContactBox">
+							<p class="contact__tel">
+								<span>
+									<img
+										loading="lazy"
+										class="contact__telIcon"
+										src="../img/kodawari/tel.svg"
+										alt="電話アイコン"
+									/>
+									<img
+										loading="lazy"
+										class="contact__telIconSp"
+										src="../img/kodawari/tel-b.svg"
+										alt="電話アイコン"
+									/>
+								</span>
+								0749-35-2981
+							</p>
+							<a href="#" class="contact-btn contact__btn"
+								>お問い合わせ<span
+									><img
+										loading="lazy"
+										src="../img/home/mail.svg"
+										alt="メールのアイコン" /></span
+							></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- ここまでメインコンテンツ部分============================== -->
+
+		<!-- ここからフッター部分============================== -->
+		<footer>
+			<div class="footer__logoBox">
+				<a href="/">
+					<img
+						loading="lazy"
+						src="../img/home/foot-logo.png"
+						alt="フッターロゴ"
+					/>
+					<p>肉の千石屋</p>
+				</a>
+				<a
+					href="https://www.instagram.com/_sengokuya_/"
+					class="footer__instaBox"
+				>
+					<img
+						loading="lazy"
+						src="../img/home/instagram.svg"
+						alt="インスタグラムのアイコン"
+					/>
+					<p>@_sengokuya_</p>
+				</a>
+				<a href="#" class="contact-btn"
+					>お問い合わせ<span
+						><img
+							loading="lazy"
+							src="../img/home/mail.svg"
+							alt="メールのアイコン" /></span
+				></a>
 			</div>
-		</section>
+			<div class="footer__btnBox">
+				<a href="#" class="btn footer__btn"
+					>ふるさと納税はこちら<span class="footer__iconFurusato"
+						><img
+							loading="lazy"
+							src="../img/home/foot-furusato.svg"
+							alt="ふるさと納税のアイコン" /></span
+				></a>
+				<a href="#" class="btn footer__btn"
+					>GoogleMAP<span
+						><img
+							loading="lazy"
+							src="../img/home/foot-map.svg"
+							alt="Googleマップのアイコン" /></span
+				></a>
+			</div>
+			<p class="footer__copyright">
+				<small>Copyright © 肉の千石屋. All Rights Reserved.</small>
+			</p>
+		</footer>
 
-	</main>
-	<!-- ここまでメインコンテンツ部分============================== -->
-
-	<!-- ここからフッター部分============================== -->
-	<footer>
-		<div class="footer__logoBox">
-			<a href="/">
-			<img loading="lazy" src="../img/home/foot-logo.png" alt="フッターロゴ">
-			<p>肉の千石屋</p>
-		</a>
-			<a href="https://www.instagram.com/_sengokuya_/" class="footer__instaBox">
-				<img loading="lazy" src="../img/home/instagram.svg" alt="インスタグラムのアイコン">
-				<p>@_sengokuya_</p>
-			</a>
-			<a href="#" class="contact-btn">お問い合わせ<span><img loading="lazy" src="../img/home/mail.svg" alt="メールのアイコン"></span></a>
-		</div>
-		<div class="footer__btnBox">
-			<a href="#" class="btn footer__btn">ふるさと納税はこちら<span class="footer__iconFurusato"><img
-				loading="lazy" src="../img/home/foot-furusato.svg" alt="ふるさと納税のアイコン"></span></a>
-			<a href="#" class="btn footer__btn">GoogleMAP<span><img loading="lazy" src="../img/home/foot-map.svg"
-						alt="Googleマップのアイコン"></span></a>
-		</div>
-		<p class="footer__copyright">
-			<small>Copyright © 肉の千石屋. All Rights Reserved.</small>
-		</p>
-	</footer>
-
-
-	<script src="../js/main.js"></script>
-</body>
-
+		<script src="../js/main.js"></script>
+	</body>
 </html>
