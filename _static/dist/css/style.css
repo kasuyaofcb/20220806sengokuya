@@ -736,7 +736,7 @@ footer {
 }
 .fv__spMenu .fv__spBtn {
   width: 350px;
-  padding: 15px 85px 15px 25px;
+  padding: 15px 45px 15px 25px;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -2444,6 +2444,10 @@ picture img {
   font-weight: normal;
 }
 
+.subHeader__spMenuIconInsta {
+  fill: #000000;
+}
+
 .poductJoubiKisho {
   background-image: url(/img/product/item-back.jpg);
   position: relative;
@@ -2532,11 +2536,13 @@ picture img {
 }
 
 .poductJoubiKisho__joubiContents {
-  width: 90%;
   margin: 90px auto 0;
   max-width: 1200px;
   display: grid;
-  grid-template-areas: ". . . a a a a a a . . ." "b b b b b . . c c c c c ";
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  grid-template-areas: ". . . a a a a a a a . . ." "b b b b b b . c c c c c c ";
   row-gap: 100px;
 }
 
@@ -2552,9 +2558,6 @@ picture img {
      -moz-column-gap: 15px;
           column-gap: 15px;
   width: 100%;
-}
-.poductJoubiKisho__joubiItem figure img {
-  width: 85%;
 }
 .poductJoubiKisho__joubiItem figure figcaption {
   font-size: 3.6rem;
@@ -2581,6 +2584,10 @@ picture img {
 
 .poductJoubiKisho__kishoBox {
   margin-top: 180px;
+}
+
+.poductJoubiKisho .st0 {
+  opacity: 0.15;
 }
 
 .dailyFood__topImg {
@@ -2941,7 +2948,6 @@ picture img {
   }
   .dailyFood__bottomText {
     font-size: 1.8rem;
-    padding: 0 20px;
     text-align: left;
   }
   .gift__mainImg {
@@ -2949,7 +2955,7 @@ picture img {
   }
   .gift__contents {
     background-color: unset;
-    padding: 0 0 100px;
+    padding: 0 0 55px;
     margin-top: 0;
   }
   .gift__titleBox {
@@ -2969,7 +2975,7 @@ picture img {
     text-align: left;
   }
   .gift__contentsImgBox {
-    margin: 65px auto 0;
+    margin: 45px auto 0;
   }
   .gift__itemNo {
     width: 60px;
@@ -3384,7 +3390,7 @@ a {
     overflow-y: hidden;
   }
   .poductJoubiKisho__inner {
-    padding: 100px 20px 80px;
+    padding: 100px 0 80px;
     position: relative;
     overflow-y: hidden;
   }
@@ -3749,6 +3755,9 @@ a {
   .dailyFood__Item6 figcaption {
     left: -50%;
   }
+  .dailyFood__bottomText {
+    padding: 0 20px;
+  }
   .gift__contentsImgBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3806,6 +3815,9 @@ a {
   }
   .kodawari__contents1LeftImg {
     max-width: 550px;
+  }
+  .poductJoubiKisho__joubiItem figure img {
+    width: 85%;
   }
 }
 
@@ -3886,6 +3898,9 @@ a {
 @media (max-width: 1300px) {
   .kodawari__contents1LeftImgEven {
     max-width: 700px;
+  }
+  .poductJoubiKisho__joubiContents {
+    width: 90%;
   }
 }
 
