@@ -384,7 +384,7 @@ footer {
 .footer__logoBox a {
   display: block;
   max-width: 350px;
-  margin: 0 auto;
+  margin: 16px auto 0;
 }
 .footer__logoBox .footer__instaBox {
   display: -webkit-box;
@@ -409,7 +409,7 @@ footer {
   gap: 10px;
 }
 .footer__instaBox img {
-  width: 20px;
+  width: 40px;
 }
 .footer__instaBox p {
   font-size: 2.2rem;
@@ -966,7 +966,7 @@ picture img {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  max-width: 1800px;
+  max-width: 2200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -984,9 +984,9 @@ picture img {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  max-width: 1800px;
+  max-width: 2200px;
   margin: 0 auto;
-  padding: 64px 20px 64px 0;
+  padding: 0 20px 64px 0;
 }
 
 .kodawari__contentsItemBox--even {
@@ -1628,7 +1628,7 @@ picture img {
 }
 
 .history__inner {
-  padding-top: 130px;
+  padding: 130px 20px 0;
 }
 
 .hisotry__contentsBox {
@@ -2492,7 +2492,7 @@ picture img {
   padding: 100px 32px 125px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .poductJoubiKisho__titleBox {
@@ -3809,6 +3809,18 @@ a {
   }
 }
 
+@media (max-width: 1150px) {
+  .kodawari__contentsItem1Box {
+    padding: 60px 20px 64px 0;
+  }
+  .kodawari__contents1LeftImgEven {
+    max-width: 600px;
+  }
+  .kodawari__noEven {
+    right: 150px;
+  }
+}
+
 @media (max-width: 1200px) {
   .kodawari__contentsItemBox--even {
     padding-top: 32px;
@@ -3901,15 +3913,6 @@ a {
   }
   .poductJoubiKisho__joubiContents {
     width: 90%;
-  }
-}
-
-@media (max-width: 1150px) {
-  .kodawari__contents1LeftImgEven {
-    max-width: 600px;
-  }
-  .kodawari__noEven {
-    right: 150px;
   }
 }
 
