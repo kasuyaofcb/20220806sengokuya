@@ -2573,6 +2573,9 @@ picture img {
 .poductJoubiKisho__joubiItem1 {
   grid-area: a;
 }
+.poductJoubiKisho__joubiItem1 img {
+  width: 100%;
+}
 
 .poductJoubiKisho__joubiItem2 {
   grid-area: b;
